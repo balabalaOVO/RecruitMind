@@ -7,9 +7,9 @@
 请根据以上材料进行专业分析，严格按照以下 JSON 结构输出（严格要求输出纯 JSON，不要包含```json标记，不要有任何额外解释文字）：
 
 {
-  "tags": ["技能/特征标签列表，至少3个"],
+  "tags": ["技能/特征标签列表，至少3个，如Python、微服务、团队管理、NLP等"],
   "matchScore": 0-100之间的整数，表示与岗位的匹配度,
-  "risks": ["潜在风险点列表，如无风险则为空数组"],
+  "risks": ["潜在风险点列表，如经验年限不足、技能栈不匹配、项目进度滞后等；如无风险则为空数组"],
   "nextAction": "INTERVIEW 或 PHONE_SCREEN 或 REJECT 或 NEED_MORE_INFO",
-  "suggestedQuestions": ["建议追问的问题列表，至少2个"]
+  "suggestedQuestions": ["建议追问的问题列表，至少2个，要具体有针对性"]
 }

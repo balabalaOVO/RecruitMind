@@ -24,8 +24,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 @Service
 public class RecruitmentAgentServiceImpl implements RecruitmentAgentService {
@@ -36,9 +34,6 @@ public class RecruitmentAgentServiceImpl implements RecruitmentAgentService {
         "我们正在招聘一位高级Python后端工程师，要求5年以上Python开发经验，" +
         "熟悉Django/FastAPI等主流框架，有微服务架构设计经验，" +
         "熟悉Docker和Kubernetes，有团队管理经验者优先。";
-
-    private static final Pattern JSON_PATTERN = Pattern.compile(
-        "\\{[^{}]*(?:\\{[^{}]*\\}[^{}]*)*\\}", Pattern.DOTALL);
 
     private final ChatModel chatModel;
     private final PromptLoader promptLoader;
@@ -130,17 +125,44 @@ public class RecruitmentAgentServiceImpl implements RecruitmentAgentService {
         if (raw == null || raw.isBlank()) {
             throw new RuntimeException("模型返回空响应");
         }
-        // Remove markdown code blocks if present
         String cleaned = raw
             .replaceAll("```json\\s*", "")
             .replaceAll("```\\s*", "")
             .trim();
-        // Find the first JSON object
-        Matcher matcher = JSON_PATTERN.matcher(cleaned);
-        if (matcher.find()) {
-            return matcher.group();
+
+        int start = cleaned.indexOf('{');
+        if (start == -1) {
+            log.warn("未找到有效 JSON 对象，使用清理后的原始文本: {}", cleaned);
+            return cleaned;
         }
-        log.warn("未找到有效 JSON 对象，使用清理后的原始文本: {}", cleaned);
+
+        int depth = 0;
+        boolean inString = false;
+        boolean escape = false;
+        for (int i = start; i < cleaned.length(); i++) {
+            char c = cleaned.charAt(i);
+            if (escape) {
+                escape = false;
+                continue;
+            }
+            if (c == '\\' && inString) {
+                escape = true;
+                continue;
+            }
+            if (c == '"') {
+                inString = !inString;
+                continue;
+            }
+            if (inString) continue;
+            if (c == '{') depth++;
+            else if (c == '}') {
+                depth--;
+                if (depth == 0) {
+                    return cleaned.substring(start, i + 1);
+                }
+            }
+        }
+        log.warn("JSON 对象未闭合，使用清理后的原始文本: {}", cleaned);
         return cleaned;
     }
 
