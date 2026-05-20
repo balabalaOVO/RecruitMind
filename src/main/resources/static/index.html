@@ -717,7 +717,7 @@ createApp({
     const servedByBackend = window.location.port === '8080';
     const savedBase = localStorage.getItem(STORAGE_KEY);
     const apiBase = ref(savedBase || (servedByBackend ? '' : DEFAULT_BASE));
-    const showSettings = ref(!servedByBackend && !savedBase);
+    const showSettings = ref(false);
 
     function apiUrl(path) {
       return apiBase.value ? apiBase.value + path : path;
@@ -729,6 +729,17 @@ createApp({
     });
 
     function saveApiBase() { showSettings.value = false; }
+
+    // Probe backend connectivity instead of relying solely on port detection
+    (async function checkConnection() {
+      if (servedByBackend) return;
+      try {
+        await fetch(apiUrl('/api/v1/agent/history'));
+        localStorage.setItem(STORAGE_KEY, apiBase.value);
+      } catch (e) {
+        if (!savedBase) showSettings.value = true;
+      }
+    })();
 
     const jsonBody = ref(JSON.stringify({
       materials: [
