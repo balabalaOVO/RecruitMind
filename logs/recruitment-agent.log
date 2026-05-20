@@ -331,3 +331,1243 @@
 2026-05-20 08:56:32.136 [http-nio-8080-exec-2] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [a8fae160] - [d09de9c9] 材料 [Knife4j] 分析完成, 匹配度: 5, 动作: REJECT
 2026-05-20 08:56:32.138 [http-nio-8080-exec-2] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [a8fae160] - [d09de9c9] 批量分析完成, 成功: 1, 失败: 0, 总计: 1
 2026-05-20 08:56:32.138 [http-nio-8080-exec-2] INFO  c.e.r.c.RecruitmentAgentController [a8fae160] - 文件上传分析请求处理完成，分析 1 份材料
+2026-05-20 09:56:14.697 [main] INFO  c.e.r.RecruitmentAgentApplication [] - Starting RecruitmentAgentApplication using Java 17.0.16 with PID 23124 (D:\A_ideaProjects-Web-AI\RecruitMind\target\classes started by hjias in D:\A_ideaProjects-Web-AI\RecruitMind)
+2026-05-20 09:56:14.700 [main] DEBUG c.e.r.RecruitmentAgentApplication [] - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-05-20 09:56:14.701 [main] INFO  c.e.r.RecruitmentAgentApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-05-20 09:56:15.639 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-20 09:56:15.737 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [] - Finished Spring Data repository scanning in 90 ms. Found 1 JPA repository interface.
+2026-05-20 09:56:16.375 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat initialized with port 8080 (http)
+2026-05-20 09:56:16.382 [main] INFO  o.a.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-05-20 09:56:16.382 [main] INFO  o.a.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-05-20 09:56:16.433 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
+2026-05-20 09:56:16.434 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 1703 ms
+2026-05-20 09:56:16.776 [main] INFO  o.h.jpa.internal.util.LogHelper [] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-20 09:56:16.840 [main] INFO  org.hibernate.Version [] - HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-05-20 09:56:16.871 [main] INFO  o.h.c.i.RegionFactoryInitiator [] - HHH000026: Second-level cache disabled
+2026-05-20 09:56:17.072 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo [] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-20 09:56:17.091 [main] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Starting...
+2026-05-20 09:56:18.143 [main] ERROR com.zaxxer.hikari.pool.HikariPool [] - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLException: Unsupported character encoding 'utf8mb4'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:98)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:90)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:64)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:74)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:85)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:436)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:424)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:273)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:105)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:66)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:129)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:223)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:169)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1432)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1503)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.example.recruitmentagent.RecruitmentAgentApplication.main(RecruitmentAgentApplication.java:10)
+Caused by: com.mysql.cj.exceptions.WrongArgumentException: Unsupported character encoding 'utf8mb4'
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.util.StringUtils.getBytes(StringUtils.java:236)
+	at com.mysql.cj.jdbc.JdbcPropertySetImpl.postInitialization(JdbcPropertySetImpl.java:66)
+	at com.mysql.cj.conf.DefaultPropertySet.initializeProperties(DefaultPropertySet.java:231)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:385)
+	... 48 common frames omitted
+Caused by: java.io.UnsupportedEncodingException: utf8mb4
+	at java.base/java.lang.String.lookupCharset(String.java:829)
+	at java.base/java.lang.String.getBytes(String.java:1765)
+	at com.mysql.cj.util.StringUtils.getBytes(StringUtils.java:234)
+	... 51 common frames omitted
+2026-05-20 09:56:18.150 [main] WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator [] - HHH000342: Could not obtain connection to query metadata
+java.lang.NullPointerException: Cannot invoke "org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(java.sql.SQLException, String)" because the return value of "org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.sqlExceptionHelper()" is null
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:273)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:105)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:66)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:129)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:223)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:169)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1432)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1503)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.example.recruitmentagent.RecruitmentAgentApplication.main(RecruitmentAgentApplication.java:10)
+2026-05-20 09:56:18.170 [main] WARN  org.hibernate.orm.deprecation [] - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-20 09:56:18.907 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator [] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-20 09:56:18.922 [main] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Starting...
+2026-05-20 09:56:19.928 [main] ERROR com.zaxxer.hikari.pool.HikariPool [] - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLException: Unsupported character encoding 'utf8mb4'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:98)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:90)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:64)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:74)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:85)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:436)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:424)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:64)
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:232)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:117)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:286)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:295)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.example.recruitmentagent.RecruitmentAgentApplication.main(RecruitmentAgentApplication.java:10)
+Caused by: com.mysql.cj.exceptions.WrongArgumentException: Unsupported character encoding 'utf8mb4'
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.util.StringUtils.getBytes(StringUtils.java:236)
+	at com.mysql.cj.jdbc.JdbcPropertySetImpl.postInitialization(JdbcPropertySetImpl.java:66)
+	at com.mysql.cj.conf.DefaultPropertySet.initializeProperties(DefaultPropertySet.java:231)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:385)
+	... 53 common frames omitted
+Caused by: java.io.UnsupportedEncodingException: utf8mb4
+	at java.base/java.lang.String.lookupCharset(String.java:829)
+	at java.base/java.lang.String.getBytes(String.java:1765)
+	at com.mysql.cj.util.StringUtils.getBytes(StringUtils.java:234)
+	... 56 common frames omitted
+2026-05-20 09:56:19.933 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper [] - SQL Error: 0, SQLState: S1009
+2026-05-20 09:56:19.934 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper [] - Unsupported character encoding 'utf8mb4'
+2026-05-20 09:56:19.946 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean [] - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [Unsupported character encoding 'utf8mb4'] [n/a]
+2026-05-20 09:56:19.947 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [Unsupported character encoding 'utf8mb4'] [n/a]
+2026-05-20 09:56:19.950 [main] INFO  o.a.catalina.core.StandardService [] - Stopping service [Tomcat]
+2026-05-20 09:56:19.963 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger [] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-05-20 09:56:19.978 [main] ERROR o.s.boot.SpringApplication [] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [Unsupported character encoding 'utf8mb4'] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1775)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.example.recruitmentagent.RecruitmentAgentApplication.main(RecruitmentAgentApplication.java:10)
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [Unsupported character encoding 'utf8mb4'] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771)
+	... 16 common frames omitted
+Caused by: org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [Unsupported character encoding 'utf8mb4'] [n/a]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:63)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:64)
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:232)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:117)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:286)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:295)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 20 common frames omitted
+Caused by: java.sql.SQLException: Unsupported character encoding 'utf8mb4'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:98)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:90)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:64)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:74)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:85)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:436)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:424)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
+	... 41 common frames omitted
+Caused by: com.mysql.cj.exceptions.WrongArgumentException: Unsupported character encoding 'utf8mb4'
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.util.StringUtils.getBytes(StringUtils.java:236)
+	at com.mysql.cj.jdbc.JdbcPropertySetImpl.postInitialization(JdbcPropertySetImpl.java:66)
+	at com.mysql.cj.conf.DefaultPropertySet.initializeProperties(DefaultPropertySet.java:231)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:385)
+	... 53 common frames omitted
+Caused by: java.io.UnsupportedEncodingException: utf8mb4
+	at java.base/java.lang.String.lookupCharset(String.java:829)
+	at java.base/java.lang.String.getBytes(String.java:1765)
+	at com.mysql.cj.util.StringUtils.getBytes(StringUtils.java:234)
+	... 56 common frames omitted
+2026-05-20 09:56:36.127 [main] INFO  c.e.r.RecruitmentAgentApplication [] - Starting RecruitmentAgentApplication using Java 17.0.16 with PID 9976 (D:\A_ideaProjects-Web-AI\RecruitMind\target\classes started by hjias in D:\A_ideaProjects-Web-AI\RecruitMind)
+2026-05-20 09:56:36.130 [main] DEBUG c.e.r.RecruitmentAgentApplication [] - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-05-20 09:56:36.131 [main] INFO  c.e.r.RecruitmentAgentApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-05-20 09:56:36.876 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-20 09:56:36.964 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [] - Finished Spring Data repository scanning in 82 ms. Found 1 JPA repository interface.
+2026-05-20 09:56:37.519 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat initialized with port 8080 (http)
+2026-05-20 09:56:37.526 [main] INFO  o.a.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-05-20 09:56:37.526 [main] INFO  o.a.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-05-20 09:56:37.574 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
+2026-05-20 09:56:37.575 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 1414 ms
+2026-05-20 09:56:37.895 [main] INFO  o.h.jpa.internal.util.LogHelper [] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-20 09:56:37.931 [main] INFO  org.hibernate.Version [] - HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-05-20 09:56:37.958 [main] INFO  o.h.c.i.RegionFactoryInitiator [] - HHH000026: Second-level cache disabled
+2026-05-20 09:56:38.144 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo [] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-20 09:56:38.161 [main] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Starting...
+2026-05-20 09:56:39.216 [main] ERROR com.zaxxer.hikari.pool.HikariPool [] - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLException: Unsupported character encoding 'utf8mb4'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:98)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:90)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:64)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:74)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:85)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:436)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:424)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:273)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:105)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:66)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:129)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:223)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:169)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1432)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1503)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.example.recruitmentagent.RecruitmentAgentApplication.main(RecruitmentAgentApplication.java:10)
+Caused by: com.mysql.cj.exceptions.WrongArgumentException: Unsupported character encoding 'utf8mb4'
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.util.StringUtils.getBytes(StringUtils.java:236)
+	at com.mysql.cj.jdbc.JdbcPropertySetImpl.postInitialization(JdbcPropertySetImpl.java:66)
+	at com.mysql.cj.conf.DefaultPropertySet.initializeProperties(DefaultPropertySet.java:231)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:385)
+	... 48 common frames omitted
+Caused by: java.io.UnsupportedEncodingException: utf8mb4
+	at java.base/java.lang.String.lookupCharset(String.java:829)
+	at java.base/java.lang.String.getBytes(String.java:1765)
+	at com.mysql.cj.util.StringUtils.getBytes(StringUtils.java:234)
+	... 51 common frames omitted
+2026-05-20 09:56:39.224 [main] WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator [] - HHH000342: Could not obtain connection to query metadata
+java.lang.NullPointerException: Cannot invoke "org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(java.sql.SQLException, String)" because the return value of "org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.sqlExceptionHelper()" is null
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:273)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:105)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:66)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:129)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:223)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:169)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1432)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1503)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.example.recruitmentagent.RecruitmentAgentApplication.main(RecruitmentAgentApplication.java:10)
+2026-05-20 09:56:39.241 [main] WARN  org.hibernate.orm.deprecation [] - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-20 09:56:39.811 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator [] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-20 09:56:39.825 [main] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Starting...
+2026-05-20 09:56:40.829 [main] ERROR com.zaxxer.hikari.pool.HikariPool [] - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLException: Unsupported character encoding 'utf8mb4'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:98)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:90)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:64)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:74)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:85)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:436)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:424)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:64)
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:232)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:117)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:286)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:295)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.example.recruitmentagent.RecruitmentAgentApplication.main(RecruitmentAgentApplication.java:10)
+Caused by: com.mysql.cj.exceptions.WrongArgumentException: Unsupported character encoding 'utf8mb4'
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.util.StringUtils.getBytes(StringUtils.java:236)
+	at com.mysql.cj.jdbc.JdbcPropertySetImpl.postInitialization(JdbcPropertySetImpl.java:66)
+	at com.mysql.cj.conf.DefaultPropertySet.initializeProperties(DefaultPropertySet.java:231)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:385)
+	... 53 common frames omitted
+Caused by: java.io.UnsupportedEncodingException: utf8mb4
+	at java.base/java.lang.String.lookupCharset(String.java:829)
+	at java.base/java.lang.String.getBytes(String.java:1765)
+	at com.mysql.cj.util.StringUtils.getBytes(StringUtils.java:234)
+	... 56 common frames omitted
+2026-05-20 09:56:40.835 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper [] - SQL Error: 0, SQLState: S1009
+2026-05-20 09:56:40.836 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper [] - Unsupported character encoding 'utf8mb4'
+2026-05-20 09:56:40.844 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean [] - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [Unsupported character encoding 'utf8mb4'] [n/a]
+2026-05-20 09:56:40.845 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [Unsupported character encoding 'utf8mb4'] [n/a]
+2026-05-20 09:56:40.848 [main] INFO  o.a.catalina.core.StandardService [] - Stopping service [Tomcat]
+2026-05-20 09:56:40.860 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger [] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-05-20 09:56:40.872 [main] ERROR o.s.boot.SpringApplication [] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [Unsupported character encoding 'utf8mb4'] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1775)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.example.recruitmentagent.RecruitmentAgentApplication.main(RecruitmentAgentApplication.java:10)
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [Unsupported character encoding 'utf8mb4'] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771)
+	... 16 common frames omitted
+Caused by: org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [Unsupported character encoding 'utf8mb4'] [n/a]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:63)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:64)
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:232)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:117)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:286)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:295)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 20 common frames omitted
+Caused by: java.sql.SQLException: Unsupported character encoding 'utf8mb4'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:98)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:90)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:64)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:74)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:85)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:436)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:424)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
+	... 41 common frames omitted
+Caused by: com.mysql.cj.exceptions.WrongArgumentException: Unsupported character encoding 'utf8mb4'
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.util.StringUtils.getBytes(StringUtils.java:236)
+	at com.mysql.cj.jdbc.JdbcPropertySetImpl.postInitialization(JdbcPropertySetImpl.java:66)
+	at com.mysql.cj.conf.DefaultPropertySet.initializeProperties(DefaultPropertySet.java:231)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:385)
+	... 53 common frames omitted
+Caused by: java.io.UnsupportedEncodingException: utf8mb4
+	at java.base/java.lang.String.lookupCharset(String.java:829)
+	at java.base/java.lang.String.getBytes(String.java:1765)
+	at com.mysql.cj.util.StringUtils.getBytes(StringUtils.java:234)
+	... 56 common frames omitted
+2026-05-20 10:00:03.912 [main] INFO  c.e.r.RecruitmentAgentApplication [] - Starting RecruitmentAgentApplication using Java 17.0.16 with PID 20840 (D:\A_ideaProjects-Web-AI\RecruitMind\target\classes started by hjias in D:\A_ideaProjects-Web-AI\RecruitMind)
+2026-05-20 10:00:03.914 [main] DEBUG c.e.r.RecruitmentAgentApplication [] - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-05-20 10:00:03.915 [main] INFO  c.e.r.RecruitmentAgentApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-05-20 10:00:04.756 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-20 10:00:04.862 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [] - Finished Spring Data repository scanning in 98 ms. Found 1 JPA repository interface.
+2026-05-20 10:00:05.338 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat initialized with port 8080 (http)
+2026-05-20 10:00:05.346 [main] INFO  o.a.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-05-20 10:00:05.347 [main] INFO  o.a.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-05-20 10:00:05.395 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
+2026-05-20 10:00:05.395 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 1448 ms
+2026-05-20 10:00:05.730 [main] INFO  o.h.jpa.internal.util.LogHelper [] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-20 10:00:05.770 [main] INFO  org.hibernate.Version [] - HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-05-20 10:00:05.793 [main] INFO  o.h.c.i.RegionFactoryInitiator [] - HHH000026: Second-level cache disabled
+2026-05-20 10:00:05.923 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo [] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-20 10:00:05.947 [main] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Starting...
+2026-05-20 10:00:06.117 [main] INFO  com.zaxxer.hikari.pool.HikariPool [] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@52b30dcd
+2026-05-20 10:00:06.119 [main] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Start completed.
+2026-05-20 10:00:06.173 [main] WARN  org.hibernate.orm.deprecation [] - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-20 10:00:06.757 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator [] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-20 10:00:06.882 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-20 10:00:07.603 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-20 10:00:07.630 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping [] - Adding welcome page: class path resource [static/index.html]
+2026-05-20 10:00:08.159 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [] - Exposing 3 endpoint(s) beneath base path '/actuator'
+2026-05-20 10:00:08.220 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat started on port 8080 (http) with context path ''
+2026-05-20 10:00:08.229 [main] INFO  c.e.r.RecruitmentAgentApplication [] - Started RecruitmentAgentApplication in 4.705 seconds (process running for 5.089)
+2026-05-20 10:00:08.359 [RMI TCP Connection(1)-10.128.3.65] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-20 10:00:08.360 [RMI TCP Connection(1)-10.128.3.65] INFO  o.s.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
+2026-05-20 10:00:08.361 [RMI TCP Connection(1)-10.128.3.65] INFO  o.s.web.servlet.DispatcherServlet [] - Completed initialization in 1 ms
+2026-05-20 10:00:14.107 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-20 10:00:14.108 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Shutdown initiated...
+2026-05-20 10:00:14.114 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Shutdown completed.
+2026-05-20 10:02:38.185 [main] INFO  c.e.r.RecruitmentAgentApplication [] - Starting RecruitmentAgentApplication using Java 17.0.16 with PID 26724 (D:\A_ideaProjects-Web-AI\RecruitMind\target\classes started by hjias in D:\A_ideaProjects-Web-AI\RecruitMind)
+2026-05-20 10:02:38.188 [main] DEBUG c.e.r.RecruitmentAgentApplication [] - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-05-20 10:02:38.188 [main] INFO  c.e.r.RecruitmentAgentApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-05-20 10:02:38.870 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-20 10:02:38.958 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [] - Finished Spring Data repository scanning in 82 ms. Found 1 JPA repository interface.
+2026-05-20 10:02:39.442 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat initialized with port 8080 (http)
+2026-05-20 10:02:39.448 [main] INFO  o.a.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-05-20 10:02:39.448 [main] INFO  o.a.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-05-20 10:02:39.491 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
+2026-05-20 10:02:39.491 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 1270 ms
+2026-05-20 10:02:39.814 [main] INFO  o.h.jpa.internal.util.LogHelper [] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-20 10:02:39.857 [main] INFO  org.hibernate.Version [] - HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-05-20 10:02:39.879 [main] INFO  o.h.c.i.RegionFactoryInitiator [] - HHH000026: Second-level cache disabled
+2026-05-20 10:02:40.028 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo [] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-20 10:02:40.047 [main] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Starting...
+2026-05-20 10:02:40.144 [main] INFO  com.zaxxer.hikari.pool.HikariPool [] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@a5d23c9
+2026-05-20 10:02:40.145 [main] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Start completed.
+2026-05-20 10:02:40.183 [main] WARN  org.hibernate.orm.deprecation [] - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-20 10:02:40.805 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator [] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-20 10:02:40.935 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-20 10:02:41.581 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-20 10:02:41.616 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping [] - Adding welcome page: class path resource [static/index.html]
+2026-05-20 10:02:42.191 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [] - Exposing 3 endpoint(s) beneath base path '/actuator'
+2026-05-20 10:02:42.248 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat started on port 8080 (http) with context path ''
+2026-05-20 10:02:42.258 [main] INFO  c.e.r.RecruitmentAgentApplication [] - Started RecruitmentAgentApplication in 4.441 seconds (process running for 4.891)
+2026-05-20 10:02:42.374 [RMI TCP Connection(1)-10.128.3.65] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-20 10:02:42.374 [RMI TCP Connection(1)-10.128.3.65] INFO  o.s.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
+2026-05-20 10:02:42.376 [RMI TCP Connection(1)-10.128.3.65] INFO  o.s.web.servlet.DispatcherServlet [] - Completed initialization in 2 ms
+2026-05-20 10:02:51.675 [http-nio-8080-exec-1] INFO  c.e.r.controller.HistoryController [c7739738] - 查询历史记录，共 0 条会话
+2026-05-20 10:02:55.569 [http-nio-8080-exec-2] INFO  c.e.r.c.RecruitmentAgentController [6b7c8ca3] - 收到 JSON 分析请求，材料数量: 2
+2026-05-20 10:02:55.569 [http-nio-8080-exec-2] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [6b7c8ca3] - [1232b1a9] 开始批量分析，共 2 份材料，模型: qwen-plus
+2026-05-20 10:02:55.582 [http-nio-8080-exec-2] DEBUG c.e.r.util.PromptLoader [6b7c8ca3] - 成功加载提示词模板: prompts/system-prompt.txt
+2026-05-20 10:02:55.611 [http-nio-8080-exec-2] DEBUG c.e.r.util.PromptLoader [6b7c8ca3] - 成功加载提示词模板: prompts/analyze-prompt.txt
+2026-05-20 10:02:55.611 [http-nio-8080-exec-2] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [6b7c8ca3] - [1232b1a9] 开始分析材料 [candidate_1], 文本长度: 80
+2026-05-20 10:02:55.611 [http-nio-8080-exec-2] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [6b7c8ca3] - [1232b1a9] 材料 [candidate_1] 渲染后的 Prompt 长度: 498
+2026-05-20 10:02:59.276 [http-nio-8080-exec-2] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [6b7c8ca3] - [1232b1a9] 材料 [candidate_1] 模型原始响应: {
+  "tags": ["Python", "微服务", "团队管理", "Django", "FastAPI"],
+  "matchScore": 95,
+  "risks": [],
+  "nextAction": "INTERVIEW",
+  "suggestedQuestions": ["请详细介绍您主导的日均千万级请求微服务重构项目中，如何解决服务间数据一致性与分布式事务问题？", "在技术负责人角色中，您如何推动团队在Django与FastAPI之间进行技术选型决策？有无具体评估指标和落地案例？"]
+}
+2026-05-20 10:02:59.283 [http-nio-8080-exec-2] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [6b7c8ca3] - [1232b1a9] 材料 [candidate_1] 提取的 JSON: {
+  "tags": ["Python", "微服务", "团队管理", "Django", "FastAPI"],
+  "matchScore": 95,
+  "risks": [],
+  "nextAction": "INTERVIEW",
+  "suggestedQuestions": ["请详细介绍您主导的日均千万级请求微服务重构项目中，如何解决服务间数据一致性与分布式事务问题？", "在技术负责人角色中，您如何推动团队在Django与FastAPI之间进行技术选型决策？有无具体评估指标和落地案例？"]
+}
+2026-05-20 10:02:59.290 [http-nio-8080-exec-2] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [6b7c8ca3] - [1232b1a9] 材料 [candidate_1] 分析完成, 匹配度: 95, 动作: INTERVIEW
+2026-05-20 10:02:59.290 [http-nio-8080-exec-2] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [6b7c8ca3] - [1232b1a9] 开始分析材料 [candidate_2], 文本长度: 68
+2026-05-20 10:02:59.290 [http-nio-8080-exec-2] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [6b7c8ca3] - [1232b1a9] 材料 [candidate_2] 渲染后的 Prompt 长度: 486
+2026-05-20 10:03:02.483 [http-nio-8080-exec-2] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [6b7c8ca3] - [1232b1a9] 材料 [candidate_2] 模型原始响应: {
+  "tags": ["Java", "Spring Boot", "Python初学者"],
+  "matchScore": 30,
+  "risks": ["经验年限不足（仅2年，且非Python方向）", "缺乏Django/FastAPI实际项目经验", "无微服务架构实战经历"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["请说明近3个月Python自学的具体内容、实践项目及遇到的技术难点", "是否有计划或正在参与基于Django/FastAPI的后端开发？能否提供代码仓库或可验证成果？"]
+}
+2026-05-20 10:03:02.483 [http-nio-8080-exec-2] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [6b7c8ca3] - [1232b1a9] 材料 [candidate_2] 提取的 JSON: {
+  "tags": ["Java", "Spring Boot", "Python初学者"],
+  "matchScore": 30,
+  "risks": ["经验年限不足（仅2年，且非Python方向）", "缺乏Django/FastAPI实际项目经验", "无微服务架构实战经历"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["请说明近3个月Python自学的具体内容、实践项目及遇到的技术难点", "是否有计划或正在参与基于Django/FastAPI的后端开发？能否提供代码仓库或可验证成果？"]
+}
+2026-05-20 10:03:02.483 [http-nio-8080-exec-2] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [6b7c8ca3] - [1232b1a9] 材料 [candidate_2] 分析完成, 匹配度: 30, 动作: REJECT
+2026-05-20 10:03:02.485 [http-nio-8080-exec-2] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [6b7c8ca3] - [1232b1a9] 批量分析完成, 成功: 2, 失败: 0, 总计: 2
+2026-05-20 10:03:02.611 [http-nio-8080-exec-2] INFO  c.e.r.service.AnalysisHistoryService [6b7c8ca3] - 分析会话已保存: id=1, traceId=1232b1a9, 结果数=2
+2026-05-20 10:03:02.648 [http-nio-8080-exec-2] INFO  c.e.r.c.RecruitmentAgentController [6b7c8ca3] - 分析请求处理完成，状态码: 200
+2026-05-20 10:03:20.661 [http-nio-8080-exec-3] INFO  c.e.r.controller.HistoryController [0cb4dabb] - 查询历史记录，共 1 条会话
+2026-05-20 10:03:20.675 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class java.time.LocalDateTime]] with root cause
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: java.util.ImmutableCollections$MapN["data"]->java.util.ArrayList[0]->com.example.recruitmentagent.entity.AnalysisSession["createdAt"])
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)
+	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1308)
+	at com.fasterxml.jackson.databind.ser.impl.UnsupportedTypeSerializer.serialize(UnsupportedTypeSerializer.java:35)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:732)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:772)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serializeContents(IndexedListSerializer.java:119)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:79)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:18)
+	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serializeFields(MapSerializer.java:808)
+	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serializeWithoutTypeInfo(MapSerializer.java:764)
+	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serialize(MapSerializer.java:720)
+	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serialize(MapSerializer.java:35)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:479)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:399)
+	at com.fasterxml.jackson.databind.ObjectWriter$Prefetch.serialize(ObjectWriter.java:1568)
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1061)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:483)
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:114)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:297)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:245)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at com.example.recruitmentagent.config.LoggingConfig.lambda$traceIdFilter$0(LoggingConfig.java:19)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-20 10:12:20.006 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-20 10:12:20.008 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Shutdown initiated...
+2026-05-20 10:12:20.011 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Shutdown completed.
+2026-05-20 10:13:15.734 [main] INFO  c.e.r.RecruitmentAgentApplication [] - Starting RecruitmentAgentApplication using Java 17.0.16 with PID 27468 (D:\A_ideaProjects-Web-AI\RecruitMind\target\classes started by hjias in D:\A_ideaProjects-Web-AI\RecruitMind)
+2026-05-20 10:13:15.736 [main] DEBUG c.e.r.RecruitmentAgentApplication [] - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-05-20 10:13:15.737 [main] INFO  c.e.r.RecruitmentAgentApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-05-20 10:13:16.750 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-20 10:13:16.838 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [] - Finished Spring Data repository scanning in 83 ms. Found 1 JPA repository interface.
+2026-05-20 10:13:17.331 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat initialized with port 8080 (http)
+2026-05-20 10:13:17.336 [main] INFO  o.a.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-05-20 10:13:17.338 [main] INFO  o.a.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-05-20 10:13:17.385 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
+2026-05-20 10:13:17.385 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 1620 ms
+2026-05-20 10:13:17.708 [main] INFO  o.h.jpa.internal.util.LogHelper [] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-20 10:13:17.738 [main] INFO  org.hibernate.Version [] - HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-05-20 10:13:17.760 [main] INFO  o.h.c.i.RegionFactoryInitiator [] - HHH000026: Second-level cache disabled
+2026-05-20 10:13:17.895 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo [] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-20 10:13:17.910 [main] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Starting...
+2026-05-20 10:13:18.015 [main] INFO  com.zaxxer.hikari.pool.HikariPool [] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a3be84
+2026-05-20 10:13:18.016 [main] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Start completed.
+2026-05-20 10:13:18.049 [main] WARN  org.hibernate.orm.deprecation [] - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-20 10:13:18.619 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator [] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-20 10:13:18.666 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-20 10:13:19.336 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-20 10:13:19.373 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping [] - Adding welcome page: class path resource [static/index.html]
+2026-05-20 10:13:19.889 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [] - Exposing 3 endpoint(s) beneath base path '/actuator'
+2026-05-20 10:13:19.943 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat started on port 8080 (http) with context path ''
+2026-05-20 10:13:19.953 [main] INFO  c.e.r.RecruitmentAgentApplication [] - Started RecruitmentAgentApplication in 4.637 seconds (process running for 6.308)
+2026-05-20 10:13:20.429 [RMI TCP Connection(3)-10.128.3.65] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-20 10:13:20.429 [RMI TCP Connection(3)-10.128.3.65] INFO  o.s.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
+2026-05-20 10:13:20.430 [RMI TCP Connection(3)-10.128.3.65] INFO  o.s.web.servlet.DispatcherServlet [] - Completed initialization in 1 ms
+2026-05-20 10:13:25.142 [http-nio-8080-exec-2] INFO  c.e.r.controller.HistoryController [74c965a6] - 查询历史记录，共 1 条会话
+2026-05-20 10:14:00.919 [http-nio-8080-exec-4] INFO  c.e.r.c.RecruitmentAgentController [98cab164] - 收到纯文本分析请求，文本长度: 498
+2026-05-20 10:14:00.921 [http-nio-8080-exec-4] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [98cab164] - [92e02d7c] 开始批量分析，共 1 份材料，模型: qwen-plus
+2026-05-20 10:14:00.942 [http-nio-8080-exec-4] DEBUG c.e.r.util.PromptLoader [98cab164] - 成功加载提示词模板: prompts/system-prompt.txt
+2026-05-20 10:14:00.946 [http-nio-8080-exec-4] DEBUG c.e.r.util.PromptLoader [98cab164] - 成功加载提示词模板: prompts/analyze-prompt.txt
+2026-05-20 10:14:00.948 [http-nio-8080-exec-4] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [98cab164] - [92e02d7c] 开始分析材料 [text-e7a17c], 文本长度: 498
+2026-05-20 10:14:00.949 [http-nio-8080-exec-4] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [98cab164] - [92e02d7c] 材料 [text-e7a17c] 渲染后的 Prompt 长度: 973
+2026-05-20 10:14:05.208 [http-nio-8080-exec-4] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [98cab164] - [92e02d7c] 材料 [text-e7a17c] 模型原始响应: {
+  "tags": ["Java", "Spring Boot", "AI工程", "Docker", "RAG"],
+  "matchScore": 35,
+  "risks": ["主技术栈为Java而非Python，缺乏Python后端框架（Django/FastAPI）使用经验", "无微服务架构设计相关描述", "无团队管理经验体现", "未提及Kubernetes使用经验"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["您是否有Python后端开发经验？能否介绍一个用Python（尤其是Django或FastAPI）主导的项目？", "在过往工作中是否参与过微服务拆分、服务治理或Kubernetes集群运维？具体角色和产出是什么？"]
+}
+2026-05-20 10:14:05.208 [http-nio-8080-exec-4] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [98cab164] - [92e02d7c] 材料 [text-e7a17c] 提取的 JSON: {
+  "tags": ["Java", "Spring Boot", "AI工程", "Docker", "RAG"],
+  "matchScore": 35,
+  "risks": ["主技术栈为Java而非Python，缺乏Python后端框架（Django/FastAPI）使用经验", "无微服务架构设计相关描述", "无团队管理经验体现", "未提及Kubernetes使用经验"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["您是否有Python后端开发经验？能否介绍一个用Python（尤其是Django或FastAPI）主导的项目？", "在过往工作中是否参与过微服务拆分、服务治理或Kubernetes集群运维？具体角色和产出是什么？"]
+}
+2026-05-20 10:14:05.215 [http-nio-8080-exec-4] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [98cab164] - [92e02d7c] 材料 [text-e7a17c] 分析完成, 匹配度: 35, 动作: REJECT
+2026-05-20 10:14:05.215 [http-nio-8080-exec-4] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [98cab164] - [92e02d7c] 批量分析完成, 成功: 1, 失败: 0, 总计: 1
+2026-05-20 10:14:05.285 [http-nio-8080-exec-4] INFO  c.e.r.service.AnalysisHistoryService [98cab164] - 分析会话已保存: id=2, traceId=92e02d7c, 结果数=1
+2026-05-20 10:14:05.305 [http-nio-8080-exec-4] INFO  c.e.r.c.RecruitmentAgentController [98cab164] - 纯文本分析请求处理完成，状态码: 200
+2026-05-20 10:14:08.264 [http-nio-8080-exec-3] INFO  c.e.r.controller.HistoryController [4af47d80] - 查询历史记录，共 2 条会话
+2026-05-20 10:16:16.487 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-20 10:16:16.498 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Shutdown initiated...
+2026-05-20 10:16:16.498 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Shutdown completed.
+2026-05-20 10:44:31.517 [main] INFO  c.e.r.RecruitmentAgentApplication [] - Starting RecruitmentAgentApplication using Java 17.0.16 with PID 26128 (D:\A_ideaProjects-Web-AI\RecruitMind\target\classes started by hjias in D:\A_ideaProjects-Web-AI\RecruitMind)
+2026-05-20 10:44:31.522 [main] DEBUG c.e.r.RecruitmentAgentApplication [] - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-05-20 10:44:31.523 [main] INFO  c.e.r.RecruitmentAgentApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-05-20 10:44:35.006 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-20 10:44:35.697 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [] - Finished Spring Data repository scanning in 659 ms. Found 1 JPA repository interface.
+2026-05-20 10:44:36.562 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat initialized with port 8080 (http)
+2026-05-20 10:44:36.571 [main] INFO  o.a.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-05-20 10:44:36.571 [main] INFO  o.a.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-05-20 10:44:36.650 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
+2026-05-20 10:44:36.656 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 5082 ms
+2026-05-20 10:44:37.049 [main] INFO  o.h.jpa.internal.util.LogHelper [] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-20 10:44:37.103 [main] INFO  org.hibernate.Version [] - HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-05-20 10:44:37.135 [main] INFO  o.h.c.i.RegionFactoryInitiator [] - HHH000026: Second-level cache disabled
+2026-05-20 10:44:37.339 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo [] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-20 10:44:37.360 [main] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Starting...
+2026-05-20 10:44:37.473 [main] INFO  com.zaxxer.hikari.pool.HikariPool [] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6cf3b3d7
+2026-05-20 10:44:37.475 [main] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Start completed.
+2026-05-20 10:44:37.518 [main] WARN  org.hibernate.orm.deprecation [] - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-20 10:44:38.242 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator [] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-20 10:44:38.293 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-20 10:44:39.131 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-20 10:44:39.162 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping [] - Adding welcome page: class path resource [static/index.html]
+2026-05-20 10:44:39.756 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [] - Exposing 3 endpoint(s) beneath base path '/actuator'
+2026-05-20 10:44:39.823 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat started on port 8080 (http) with context path ''
+2026-05-20 10:44:39.835 [main] INFO  c.e.r.RecruitmentAgentApplication [] - Started RecruitmentAgentApplication in 8.793 seconds (process running for 12.656)
+2026-05-20 10:44:43.143 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-20 10:44:43.146 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
+2026-05-20 10:44:43.146 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet [] - Completed initialization in 0 ms
+2026-05-20 10:44:43.288 [http-nio-8080-exec-1] INFO  c.e.r.c.RecruitmentAgentController [6537a76e] - 收到纯文本分析请求，文本长度: 449
+2026-05-20 10:44:43.288 [http-nio-8080-exec-1] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [6537a76e] - [a5da031e] 开始批量分析，共 1 份材料，模型: qwen-plus
+2026-05-20 10:44:43.295 [http-nio-8080-exec-1] DEBUG c.e.r.util.PromptLoader [6537a76e] - 成功加载提示词模板: prompts/system-prompt.txt
+2026-05-20 10:44:43.295 [http-nio-8080-exec-1] DEBUG c.e.r.util.PromptLoader [6537a76e] - 成功加载提示词模板: prompts/analyze-prompt.txt
+2026-05-20 10:44:43.301 [http-nio-8080-exec-1] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [6537a76e] - [a5da031e] 开始分析材料 [text-d9b410], 文本长度: 449
+2026-05-20 10:44:43.302 [http-nio-8080-exec-1] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [6537a76e] - [a5da031e] 材料 [text-d9b410] 渲染后的 Prompt 长度: 924
+2026-05-20 10:44:46.890 [http-nio-8080-exec-1] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [6537a76e] - [a5da031e] 材料 [text-d9b410] 模型原始响应: {
+  "tags": ["Python", "微服务", "团队管理", "高可用架构", "Docker/Kubernetes"],
+  "matchScore": 92,
+  "risks": [],
+  "nextAction": "INTERVIEW",
+  "suggestedQuestions": ["请具体说明在微服务改造中您负责的模块边界划分逻辑、服务间通信方式及如何保障分布式事务一致性？", "您提到培养3名初级工程师成为骨干，请描述具体的辅导机制、技术决策授权方式以及您在其中的角色转变过程？"]
+}
+2026-05-20 10:44:46.890 [http-nio-8080-exec-1] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [6537a76e] - [a5da031e] 材料 [text-d9b410] 提取的 JSON: {
+  "tags": ["Python", "微服务", "团队管理", "高可用架构", "Docker/Kubernetes"],
+  "matchScore": 92,
+  "risks": [],
+  "nextAction": "INTERVIEW",
+  "suggestedQuestions": ["请具体说明在微服务改造中您负责的模块边界划分逻辑、服务间通信方式及如何保障分布式事务一致性？", "您提到培养3名初级工程师成为骨干，请描述具体的辅导机制、技术决策授权方式以及您在其中的角色转变过程？"]
+}
+2026-05-20 10:44:46.897 [http-nio-8080-exec-1] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [6537a76e] - [a5da031e] 材料 [text-d9b410] 分析完成, 匹配度: 92, 动作: INTERVIEW
+2026-05-20 10:44:46.903 [http-nio-8080-exec-1] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [6537a76e] - [a5da031e] 批量分析完成, 成功: 1, 失败: 0, 总计: 1
+2026-05-20 10:44:47.035 [http-nio-8080-exec-1] INFO  c.e.r.service.AnalysisHistoryService [6537a76e] - 分析会话已保存: id=3, traceId=a5da031e, 结果数=1
+2026-05-20 10:44:47.063 [http-nio-8080-exec-1] INFO  c.e.r.c.RecruitmentAgentController [6537a76e] - 纯文本分析请求处理完成，状态码: 200
+2026-05-20 10:45:40.770 [http-nio-8080-exec-2] INFO  c.e.r.c.RecruitmentAgentController [dc681649] - 收到纯文本分析请求，文本长度: 434
+2026-05-20 10:45:40.771 [http-nio-8080-exec-2] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [dc681649] - [898e82e4] 开始批量分析，共 1 份材料，模型: qwen-plus
+2026-05-20 10:45:40.772 [http-nio-8080-exec-2] DEBUG c.e.r.util.PromptLoader [dc681649] - 成功加载提示词模板: prompts/system-prompt.txt
+2026-05-20 10:45:40.773 [http-nio-8080-exec-2] DEBUG c.e.r.util.PromptLoader [dc681649] - 成功加载提示词模板: prompts/analyze-prompt.txt
+2026-05-20 10:45:40.773 [http-nio-8080-exec-2] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [dc681649] - [898e82e4] 开始分析材料 [text-cbd62c], 文本长度: 434
+2026-05-20 10:45:40.773 [http-nio-8080-exec-2] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [dc681649] - [898e82e4] 材料 [text-cbd62c] 渲染后的 Prompt 长度: 909
+2026-05-20 10:45:44.685 [http-nio-8080-exec-2] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [dc681649] - [898e82e4] 材料 [text-cbd62c] 模型原始响应: {
+  "tags": ["销售管理", "大客户拓展", "业绩达成"],
+  "matchScore": 15,
+  "risks": ["岗位方向完全不匹配：应聘区域销售总监/大客户经理，而招聘岗位为高级Python后端工程师", "技术栈无任何Python/Django/FastAPI/Docker/K8s相关经验描述", "无微服务架构、后端开发、团队技术管理等相关背景"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["您是否了解本次招聘的高级Python后端工程师岗位的技术要求？", "是否有意向或计划转向技术岗位发展？如有，请说明相关技术学习或项目实践经历"]
+}
+2026-05-20 10:45:44.687 [http-nio-8080-exec-2] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [dc681649] - [898e82e4] 材料 [text-cbd62c] 提取的 JSON: {
+  "tags": ["销售管理", "大客户拓展", "业绩达成"],
+  "matchScore": 15,
+  "risks": ["岗位方向完全不匹配：应聘区域销售总监/大客户经理，而招聘岗位为高级Python后端工程师", "技术栈无任何Python/Django/FastAPI/Docker/K8s相关经验描述", "无微服务架构、后端开发、团队技术管理等相关背景"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["您是否了解本次招聘的高级Python后端工程师岗位的技术要求？", "是否有意向或计划转向技术岗位发展？如有，请说明相关技术学习或项目实践经历"]
+}
+2026-05-20 10:45:44.687 [http-nio-8080-exec-2] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [dc681649] - [898e82e4] 材料 [text-cbd62c] 分析完成, 匹配度: 15, 动作: REJECT
+2026-05-20 10:45:44.688 [http-nio-8080-exec-2] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [dc681649] - [898e82e4] 批量分析完成, 成功: 1, 失败: 0, 总计: 1
+2026-05-20 10:45:44.695 [http-nio-8080-exec-2] INFO  c.e.r.service.AnalysisHistoryService [dc681649] - 分析会话已保存: id=4, traceId=898e82e4, 结果数=1
+2026-05-20 10:45:44.697 [http-nio-8080-exec-2] INFO  c.e.r.c.RecruitmentAgentController [dc681649] - 纯文本分析请求处理完成，状态码: 200
+2026-05-20 10:46:33.090 [http-nio-8080-exec-3] INFO  c.e.r.c.RecruitmentAgentController [1244e422] - 收到纯文本分析请求，文本长度: 1342
+2026-05-20 10:46:33.091 [http-nio-8080-exec-3] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [1244e422] - [cee99c50] 开始批量分析，共 1 份材料，模型: qwen-plus
+2026-05-20 10:46:33.091 [http-nio-8080-exec-3] DEBUG c.e.r.util.PromptLoader [1244e422] - 成功加载提示词模板: prompts/system-prompt.txt
+2026-05-20 10:46:33.092 [http-nio-8080-exec-3] DEBUG c.e.r.util.PromptLoader [1244e422] - 成功加载提示词模板: prompts/analyze-prompt.txt
+2026-05-20 10:46:33.092 [http-nio-8080-exec-3] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [1244e422] - [cee99c50] 开始分析材料 [text-bb1e3b], 文本长度: 1342
+2026-05-20 10:46:33.092 [http-nio-8080-exec-3] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [1244e422] - [cee99c50] 材料 [text-bb1e3b] 渲染后的 Prompt 长度: 1817
+2026-05-20 10:46:36.169 [http-nio-8080-exec-3] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [1244e422] - [cee99c50] 材料 [text-bb1e3b] 模型原始响应: {
+  "tags": ["Python", "微服务", "团队管理"],
+  "matchScore": 92,
+  "risks": [],
+  "nextAction": "INTERVIEW",
+  "suggestedQuestions": ["请详细说明在微服务改造中您负责的具体技术决策（如服务拆分粒度、API网关选型、分布式事务实现方式），以及如何保障灰度发布过程中的数据一致性？", "您提到培养3名初级工程师成为项目骨干，请具体描述其中一位的成长路径、您提供的关键指导及可量化的成果？"]
+}
+2026-05-20 10:46:36.169 [http-nio-8080-exec-3] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [1244e422] - [cee99c50] 材料 [text-bb1e3b] 提取的 JSON: {
+  "tags": ["Python", "微服务", "团队管理"],
+  "matchScore": 92,
+  "risks": [],
+  "nextAction": "INTERVIEW",
+  "suggestedQuestions": ["请详细说明在微服务改造中您负责的具体技术决策（如服务拆分粒度、API网关选型、分布式事务实现方式），以及如何保障灰度发布过程中的数据一致性？", "您提到培养3名初级工程师成为项目骨干，请具体描述其中一位的成长路径、您提供的关键指导及可量化的成果？"]
+}
+2026-05-20 10:46:36.169 [http-nio-8080-exec-3] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [1244e422] - [cee99c50] 材料 [text-bb1e3b] 分析完成, 匹配度: 92, 动作: INTERVIEW
+2026-05-20 10:46:36.169 [http-nio-8080-exec-3] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [1244e422] - [cee99c50] 批量分析完成, 成功: 1, 失败: 0, 总计: 1
+2026-05-20 10:46:36.185 [http-nio-8080-exec-3] INFO  c.e.r.service.AnalysisHistoryService [1244e422] - 分析会话已保存: id=5, traceId=cee99c50, 结果数=1
+2026-05-20 10:46:36.185 [http-nio-8080-exec-3] INFO  c.e.r.c.RecruitmentAgentController [1244e422] - 纯文本分析请求处理完成，状态码: 200
+2026-05-20 10:47:04.050 [http-nio-8080-exec-5] INFO  c.e.r.c.RecruitmentAgentController [3bf89a8d] - 收到纯文本分析请求，文本长度: 1342
+2026-05-20 10:47:04.050 [http-nio-8080-exec-5] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [3bf89a8d] - [77781f8c] 开始批量分析，共 1 份材料，模型: qwen-plus
+2026-05-20 10:47:04.051 [http-nio-8080-exec-5] DEBUG c.e.r.util.PromptLoader [3bf89a8d] - 成功加载提示词模板: prompts/system-prompt.txt
+2026-05-20 10:47:04.054 [http-nio-8080-exec-5] DEBUG c.e.r.util.PromptLoader [3bf89a8d] - 成功加载提示词模板: prompts/analyze-prompt.txt
+2026-05-20 10:47:04.054 [http-nio-8080-exec-5] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [3bf89a8d] - [77781f8c] 开始分析材料 [text-01800c], 文本长度: 1342
+2026-05-20 10:47:04.055 [http-nio-8080-exec-5] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [3bf89a8d] - [77781f8c] 材料 [text-01800c] 渲染后的 Prompt 长度: 1817
+2026-05-20 10:47:06.833 [http-nio-8080-exec-5] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [3bf89a8d] - [77781f8c] 材料 [text-01800c] 模型原始响应: {
+  "tags": ["Python", "微服务", "团队管理"],
+  "matchScore": 92,
+  "risks": [],
+  "nextAction": "INTERVIEW",
+  "suggestedQuestions": ["请详细说明在微服务改造中您主导的技术选型过程，特别是Django/FastAPI的取舍依据及服务拆分边界设计方法", "您提到培养了3名初级工程师成为骨干，请具体描述您建立的Code Review规范内容、执行机制及效果量化指标"]
+}
+2026-05-20 10:47:06.833 [http-nio-8080-exec-5] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [3bf89a8d] - [77781f8c] 材料 [text-01800c] 提取的 JSON: {
+  "tags": ["Python", "微服务", "团队管理"],
+  "matchScore": 92,
+  "risks": [],
+  "nextAction": "INTERVIEW",
+  "suggestedQuestions": ["请详细说明在微服务改造中您主导的技术选型过程，特别是Django/FastAPI的取舍依据及服务拆分边界设计方法", "您提到培养了3名初级工程师成为骨干，请具体描述您建立的Code Review规范内容、执行机制及效果量化指标"]
+}
+2026-05-20 10:47:06.833 [http-nio-8080-exec-5] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [3bf89a8d] - [77781f8c] 材料 [text-01800c] 分析完成, 匹配度: 92, 动作: INTERVIEW
+2026-05-20 10:47:06.833 [http-nio-8080-exec-5] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [3bf89a8d] - [77781f8c] 批量分析完成, 成功: 1, 失败: 0, 总计: 1
+2026-05-20 10:47:06.849 [http-nio-8080-exec-5] INFO  c.e.r.service.AnalysisHistoryService [3bf89a8d] - 分析会话已保存: id=6, traceId=77781f8c, 结果数=1
+2026-05-20 10:47:06.849 [http-nio-8080-exec-5] INFO  c.e.r.c.RecruitmentAgentController [3bf89a8d] - 纯文本分析请求处理完成，状态码: 200
+2026-05-20 10:47:38.647 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-20 10:47:38.651 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Shutdown initiated...
+2026-05-20 10:47:38.658 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Shutdown completed.
+2026-05-20 10:47:44.705 [main] INFO  c.e.r.RecruitmentAgentApplication [] - Starting RecruitmentAgentApplication using Java 17.0.16 with PID 516 (D:\A_ideaProjects-Web-AI\RecruitMind\target\classes started by hjias in D:\A_ideaProjects-Web-AI\RecruitMind)
+2026-05-20 10:47:44.707 [main] DEBUG c.e.r.RecruitmentAgentApplication [] - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-05-20 10:47:44.708 [main] INFO  c.e.r.RecruitmentAgentApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-05-20 10:47:45.490 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-20 10:47:45.586 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [] - Finished Spring Data repository scanning in 90 ms. Found 1 JPA repository interface.
+2026-05-20 10:47:46.113 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat initialized with port 8080 (http)
+2026-05-20 10:47:46.121 [main] INFO  o.a.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-05-20 10:47:46.121 [main] INFO  o.a.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-05-20 10:47:46.178 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
+2026-05-20 10:47:46.178 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 1441 ms
+2026-05-20 10:47:46.521 [main] INFO  o.h.jpa.internal.util.LogHelper [] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-20 10:47:46.571 [main] INFO  org.hibernate.Version [] - HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-05-20 10:47:46.608 [main] INFO  o.h.c.i.RegionFactoryInitiator [] - HHH000026: Second-level cache disabled
+2026-05-20 10:47:46.799 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo [] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-20 10:47:46.820 [main] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Starting...
+2026-05-20 10:47:46.939 [main] INFO  com.zaxxer.hikari.pool.HikariPool [] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@550f522b
+2026-05-20 10:47:46.941 [main] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Start completed.
+2026-05-20 10:47:46.984 [main] WARN  org.hibernate.orm.deprecation [] - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-20 10:47:47.691 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator [] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-20 10:47:47.738 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-20 10:47:48.440 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-20 10:47:48.471 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping [] - Adding welcome page: class path resource [static/index.html]
+2026-05-20 10:47:49.017 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [] - Exposing 3 endpoint(s) beneath base path '/actuator'
+2026-05-20 10:47:49.082 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat started on port 8080 (http) with context path ''
+2026-05-20 10:47:49.093 [main] INFO  c.e.r.RecruitmentAgentApplication [] - Started RecruitmentAgentApplication in 4.878 seconds (process running for 5.521)
+2026-05-20 10:47:49.251 [RMI TCP Connection(2)-10.128.3.65] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-20 10:47:49.251 [RMI TCP Connection(2)-10.128.3.65] INFO  o.s.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
+2026-05-20 10:47:49.253 [RMI TCP Connection(2)-10.128.3.65] INFO  o.s.web.servlet.DispatcherServlet [] - Completed initialization in 2 ms
+2026-05-20 10:49:57.946 [http-nio-8080-exec-1] INFO  c.e.r.c.RecruitmentAgentController [97365a1e] - 收到文件上传分析请求，文件数量: 3
+2026-05-20 10:49:57.964 [http-nio-8080-exec-1] INFO  c.e.r.c.RecruitmentAgentController [97365a1e] - 已加载文件 [候选人2], 原始文件名: 候选人2.txt, 文本长度: 451
+2026-05-20 10:49:57.974 [http-nio-8080-exec-1] INFO  c.e.r.c.RecruitmentAgentController [97365a1e] - 已加载文件 [候选人3], 原始文件名: 候选人3.txt, 文本长度: 434
+2026-05-20 10:49:57.984 [http-nio-8080-exec-1] INFO  c.e.r.c.RecruitmentAgentController [97365a1e] - 已加载文件 [候选人1], 原始文件名: 候选人1.txt, 文本长度: 449
+2026-05-20 10:49:57.985 [http-nio-8080-exec-1] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [97365a1e] - [15f6dadf] 开始批量分析，共 3 份材料，模型: qwen-plus
+2026-05-20 10:49:57.986 [http-nio-8080-exec-1] DEBUG c.e.r.util.PromptLoader [97365a1e] - 成功加载提示词模板: prompts/system-prompt.txt
+2026-05-20 10:49:57.986 [http-nio-8080-exec-1] DEBUG c.e.r.util.PromptLoader [97365a1e] - 成功加载提示词模板: prompts/analyze-prompt.txt
+2026-05-20 10:49:57.987 [http-nio-8080-exec-1] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [97365a1e] - [15f6dadf] 开始分析材料 [候选人2], 文本长度: 451
+2026-05-20 10:49:57.988 [http-nio-8080-exec-1] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [97365a1e] - [15f6dadf] 材料 [候选人2] 渲染后的 Prompt 长度: 926
+2026-05-20 10:50:02.844 [http-nio-8080-exec-1] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [97365a1e] - [15f6dadf] 材料 [候选人2] 模型原始响应: {
+  "tags": ["流程优化", "成本控制", "团队建设"],
+  "matchScore": 25,
+  "risks": ["岗位方向严重不匹配：竞聘岗位为运营总监/部门经理，与Python后端工程师岗位无技术交集", "无任何Python/Django/FastAPI/微服务/Docker/Kubernetes相关经验描述", "无后端开发项目或技术背景信息"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["您是否有Python后端开发相关项目经验或技术背景？能否介绍一个您主导或深度参与的技术系统开发案例？", "您是否了解本岗位所需的Django/FastAPI、微服务架构及容器化部署等技术要求？是否有计划或正在补足该技术栈？"]
+}
+2026-05-20 10:50:02.846 [http-nio-8080-exec-1] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [97365a1e] - [15f6dadf] 材料 [候选人2] 提取的 JSON: {
+  "tags": ["流程优化", "成本控制", "团队建设"],
+  "matchScore": 25,
+  "risks": ["岗位方向严重不匹配：竞聘岗位为运营总监/部门经理，与Python后端工程师岗位无技术交集", "无任何Python/Django/FastAPI/微服务/Docker/Kubernetes相关经验描述", "无后端开发项目或技术背景信息"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["您是否有Python后端开发相关项目经验或技术背景？能否介绍一个您主导或深度参与的技术系统开发案例？", "您是否了解本岗位所需的Django/FastAPI、微服务架构及容器化部署等技术要求？是否有计划或正在补足该技术栈？"]
+}
+2026-05-20 10:50:02.853 [http-nio-8080-exec-1] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [97365a1e] - [15f6dadf] 材料 [候选人2] 分析完成, 匹配度: 25, 动作: REJECT
+2026-05-20 10:50:02.853 [http-nio-8080-exec-1] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [97365a1e] - [15f6dadf] 开始分析材料 [候选人3], 文本长度: 434
+2026-05-20 10:50:02.853 [http-nio-8080-exec-1] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [97365a1e] - [15f6dadf] 材料 [候选人3] 渲染后的 Prompt 长度: 909
+2026-05-20 10:50:06.804 [http-nio-8080-exec-1] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [97365a1e] - [15f6dadf] 材料 [候选人3] 模型原始响应: {
+  "tags": ["销售管理", "大客户拓展", "团队赋能"],
+  "matchScore": 15,
+  "risks": ["岗位方向完全不匹配：应聘销售岗，目标岗位为Python后端工程师", "技术栈无任何Python/Django/Kubernetes相关经验描述", "无微服务、Docker、代码开发或技术管理背景"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["您是否同时在寻求技术类岗位机会？是否有Python后端开发相关项目或技能储备？", "您过往工作中是否参与过与技术团队深度协作的系统化项目（如CRM定制开发、销售数据平台对接等）？"]
+}
+2026-05-20 10:50:06.804 [http-nio-8080-exec-1] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [97365a1e] - [15f6dadf] 材料 [候选人3] 提取的 JSON: {
+  "tags": ["销售管理", "大客户拓展", "团队赋能"],
+  "matchScore": 15,
+  "risks": ["岗位方向完全不匹配：应聘销售岗，目标岗位为Python后端工程师", "技术栈无任何Python/Django/Kubernetes相关经验描述", "无微服务、Docker、代码开发或技术管理背景"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["您是否同时在寻求技术类岗位机会？是否有Python后端开发相关项目或技能储备？", "您过往工作中是否参与过与技术团队深度协作的系统化项目（如CRM定制开发、销售数据平台对接等）？"]
+}
+2026-05-20 10:50:06.804 [http-nio-8080-exec-1] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [97365a1e] - [15f6dadf] 材料 [候选人3] 分析完成, 匹配度: 15, 动作: REJECT
+2026-05-20 10:50:06.804 [http-nio-8080-exec-1] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [97365a1e] - [15f6dadf] 开始分析材料 [候选人1], 文本长度: 449
+2026-05-20 10:50:06.804 [http-nio-8080-exec-1] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [97365a1e] - [15f6dadf] 材料 [候选人1] 渲染后的 Prompt 长度: 924
+2026-05-20 10:50:10.051 [http-nio-8080-exec-1] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [97365a1e] - [15f6dadf] 材料 [候选人1] 模型原始响应: {
+  "tags": ["Python", "微服务", "团队管理", "高可用架构", "Docker/Kubernetes"],
+  "matchScore": 92,
+  "risks": [],
+  "nextAction": "INTERVIEW",
+  "suggestedQuestions": ["请详细说明在微服务改造中如何划分服务边界、处理服务间通信及数据一致性，是否使用了Saga或TCC等分布式事务模式？", "您提到培养3名初级工程师成为项目骨干，请具体描述您的技术传承机制（如文档体系、内部分享频率、Code Review流程）及可量化的成长指标。"]
+}
+2026-05-20 10:50:10.051 [http-nio-8080-exec-1] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [97365a1e] - [15f6dadf] 材料 [候选人1] 提取的 JSON: {
+  "tags": ["Python", "微服务", "团队管理", "高可用架构", "Docker/Kubernetes"],
+  "matchScore": 92,
+  "risks": [],
+  "nextAction": "INTERVIEW",
+  "suggestedQuestions": ["请详细说明在微服务改造中如何划分服务边界、处理服务间通信及数据一致性，是否使用了Saga或TCC等分布式事务模式？", "您提到培养3名初级工程师成为项目骨干，请具体描述您的技术传承机制（如文档体系、内部分享频率、Code Review流程）及可量化的成长指标。"]
+}
+2026-05-20 10:50:10.052 [http-nio-8080-exec-1] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [97365a1e] - [15f6dadf] 材料 [候选人1] 分析完成, 匹配度: 92, 动作: INTERVIEW
+2026-05-20 10:50:10.052 [http-nio-8080-exec-1] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [97365a1e] - [15f6dadf] 批量分析完成, 成功: 3, 失败: 0, 总计: 3
+2026-05-20 10:50:10.113 [http-nio-8080-exec-1] INFO  c.e.r.service.AnalysisHistoryService [97365a1e] - 分析会话已保存: id=7, traceId=15f6dadf, 结果数=3
+2026-05-20 10:50:10.129 [http-nio-8080-exec-1] INFO  c.e.r.c.RecruitmentAgentController [97365a1e] - 文件上传分析请求处理完成，分析 3 份材料
+2026-05-20 10:50:41.433 [http-nio-8080-exec-9] INFO  c.e.r.controller.HistoryController [9a386a6b] - 查询历史记录，共 7 条会话
+2026-05-20 10:50:56.553 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-20 10:50:56.569 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Shutdown initiated...
+2026-05-20 10:50:56.572 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Shutdown completed.
+2026-05-20 10:52:12.234 [main] INFO  c.e.r.RecruitmentAgentApplication [] - Starting RecruitmentAgentApplication using Java 17.0.16 with PID 10204 (D:\A_ideaProjects-Web-AI\RecruitMind\target\classes started by hjias in D:\A_ideaProjects-Web-AI\RecruitMind)
+2026-05-20 10:52:12.237 [main] DEBUG c.e.r.RecruitmentAgentApplication [] - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-05-20 10:52:12.238 [main] INFO  c.e.r.RecruitmentAgentApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-05-20 10:52:13.249 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-20 10:52:13.345 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [] - Finished Spring Data repository scanning in 87 ms. Found 1 JPA repository interface.
+2026-05-20 10:52:13.892 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat initialized with port 8080 (http)
+2026-05-20 10:52:13.900 [main] INFO  o.a.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-05-20 10:52:13.900 [main] INFO  o.a.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-05-20 10:52:13.952 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
+2026-05-20 10:52:13.953 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 1684 ms
+2026-05-20 10:52:14.334 [main] INFO  o.h.jpa.internal.util.LogHelper [] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-20 10:52:14.368 [main] INFO  org.hibernate.Version [] - HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-05-20 10:52:14.388 [main] INFO  o.h.c.i.RegionFactoryInitiator [] - HHH000026: Second-level cache disabled
+2026-05-20 10:52:14.540 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo [] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-20 10:52:14.566 [main] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Starting...
+2026-05-20 10:52:14.676 [main] INFO  com.zaxxer.hikari.pool.HikariPool [] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@550f522b
+2026-05-20 10:52:14.677 [main] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Start completed.
+2026-05-20 10:52:14.715 [main] WARN  org.hibernate.orm.deprecation [] - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-20 10:52:15.366 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator [] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-20 10:52:15.416 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-20 10:52:16.108 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-20 10:52:16.137 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping [] - Adding welcome page: class path resource [static/index.html]
+2026-05-20 10:52:16.700 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [] - Exposing 3 endpoint(s) beneath base path '/actuator'
+2026-05-20 10:52:16.758 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat started on port 8080 (http) with context path ''
+2026-05-20 10:52:16.769 [main] INFO  c.e.r.RecruitmentAgentApplication [] - Started RecruitmentAgentApplication in 4.986 seconds (process running for 5.571)
+2026-05-20 10:52:17.066 [RMI TCP Connection(3)-10.128.3.65] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-20 10:52:17.067 [RMI TCP Connection(3)-10.128.3.65] INFO  o.s.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
+2026-05-20 10:52:17.069 [RMI TCP Connection(3)-10.128.3.65] INFO  o.s.web.servlet.DispatcherServlet [] - Completed initialization in 2 ms
+2026-05-20 10:52:36.913 [http-nio-8080-exec-3] INFO  c.e.r.c.RecruitmentAgentController [3110fc8d] - 收到 JSON 分析请求，材料数量: 2
+2026-05-20 10:52:36.915 [http-nio-8080-exec-3] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [3110fc8d] - [24ee1e66] 开始批量分析，共 2 份材料，模型: qwen-plus
+2026-05-20 10:52:36.919 [http-nio-8080-exec-3] DEBUG c.e.r.util.PromptLoader [3110fc8d] - 成功加载提示词模板: prompts/system-prompt.txt
+2026-05-20 10:52:36.921 [http-nio-8080-exec-3] DEBUG c.e.r.util.PromptLoader [3110fc8d] - 成功加载提示词模板: prompts/analyze-prompt.txt
+2026-05-20 10:52:36.922 [http-nio-8080-exec-3] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [3110fc8d] - [24ee1e66] 开始分析材料 [candidate_1], 文本长度: 80
+2026-05-20 10:52:36.923 [http-nio-8080-exec-3] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [3110fc8d] - [24ee1e66] 材料 [candidate_1] 渲染后的 Prompt 长度: 498
+2026-05-20 10:52:40.440 [http-nio-8080-exec-3] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [3110fc8d] - [24ee1e66] 材料 [candidate_1] 模型原始响应: {
+  "tags": ["Python", "微服务", "团队管理", "Django", "FastAPI"],
+  "matchScore": 95,
+  "risks": [],
+  "nextAction": "INTERVIEW",
+  "suggestedQuestions": ["请详细说明您主导的千万级请求微服务重构项目中，如何划分服务边界、解决分布式事务及服务间通信问题？", "作为技术负责人，您在团队中如何推动Django与FastAPI技术选型并平衡迁移成本与长期可维护性？"]
+}
+2026-05-20 10:52:40.440 [http-nio-8080-exec-3] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [3110fc8d] - [24ee1e66] 材料 [candidate_1] 提取的 JSON: {
+  "tags": ["Python", "微服务", "团队管理", "Django", "FastAPI"],
+  "matchScore": 95,
+  "risks": [],
+  "nextAction": "INTERVIEW",
+  "suggestedQuestions": ["请详细说明您主导的千万级请求微服务重构项目中，如何划分服务边界、解决分布式事务及服务间通信问题？", "作为技术负责人，您在团队中如何推动Django与FastAPI技术选型并平衡迁移成本与长期可维护性？"]
+}
+2026-05-20 10:52:40.444 [http-nio-8080-exec-3] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [3110fc8d] - [24ee1e66] 材料 [candidate_1] 分析完成, 匹配度: 95, 动作: INTERVIEW
+2026-05-20 10:52:40.446 [http-nio-8080-exec-3] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [3110fc8d] - [24ee1e66] 开始分析材料 [candidate_2], 文本长度: 68
+2026-05-20 10:52:40.446 [http-nio-8080-exec-3] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [3110fc8d] - [24ee1e66] 材料 [candidate_2] 渲染后的 Prompt 长度: 486
+2026-05-20 10:52:43.527 [http-nio-8080-exec-3] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [3110fc8d] - [24ee1e66] 材料 [candidate_2] 模型原始响应: {
+  "tags": ["Java", "Spring Boot", "Python初学者"],
+  "matchScore": 25,
+  "risks": ["经验年限不足（仅2年，且非Python方向）", "缺乏Django/FastAPI实际项目经验", "无微服务架构实战经历"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["请说明近3个月Python自学的具体内容、实践项目及掌握程度", "是否有计划或正在参与基于Django/FastAPI的后端开发？预期何时能胜任高级Python后端岗位？"]
+}
+2026-05-20 10:52:43.528 [http-nio-8080-exec-3] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [3110fc8d] - [24ee1e66] 材料 [candidate_2] 提取的 JSON: {
+  "tags": ["Java", "Spring Boot", "Python初学者"],
+  "matchScore": 25,
+  "risks": ["经验年限不足（仅2年，且非Python方向）", "缺乏Django/FastAPI实际项目经验", "无微服务架构实战经历"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["请说明近3个月Python自学的具体内容、实践项目及掌握程度", "是否有计划或正在参与基于Django/FastAPI的后端开发？预期何时能胜任高级Python后端岗位？"]
+}
+2026-05-20 10:52:43.528 [http-nio-8080-exec-3] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [3110fc8d] - [24ee1e66] 材料 [candidate_2] 分析完成, 匹配度: 25, 动作: REJECT
+2026-05-20 10:52:43.529 [http-nio-8080-exec-3] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [3110fc8d] - [24ee1e66] 批量分析完成, 成功: 2, 失败: 0, 总计: 2
+2026-05-20 10:52:43.633 [http-nio-8080-exec-3] INFO  c.e.r.service.AnalysisHistoryService [3110fc8d] - 分析会话已保存: id=8, traceId=24ee1e66, 结果数=2
+2026-05-20 10:52:43.657 [http-nio-8080-exec-3] INFO  c.e.r.c.RecruitmentAgentController [3110fc8d] - 分析请求处理完成，状态码: 200
+2026-05-20 10:53:16.360 [http-nio-8080-exec-4] INFO  c.e.r.c.RecruitmentAgentController [0894beef] - 收到纯文本分析请求，文本长度: 434
+2026-05-20 10:53:16.361 [http-nio-8080-exec-4] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [0894beef] - [d389db8c] 开始批量分析，共 1 份材料，模型: qwen-plus
+2026-05-20 10:53:16.362 [http-nio-8080-exec-4] DEBUG c.e.r.util.PromptLoader [0894beef] - 成功加载提示词模板: prompts/system-prompt.txt
+2026-05-20 10:53:16.362 [http-nio-8080-exec-4] DEBUG c.e.r.util.PromptLoader [0894beef] - 成功加载提示词模板: prompts/analyze-prompt.txt
+2026-05-20 10:53:16.363 [http-nio-8080-exec-4] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [0894beef] - [d389db8c] 开始分析材料 [text-61f16e], 文本长度: 434
+2026-05-20 10:53:16.363 [http-nio-8080-exec-4] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [0894beef] - [d389db8c] 材料 [text-61f16e] 渲染后的 Prompt 长度: 909
+2026-05-20 10:53:20.203 [http-nio-8080-exec-4] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [0894beef] - [d389db8c] 材料 [text-61f16e] 模型原始响应: {
+  "tags": ["销售管理", "大客户拓展", "团队赋能"],
+  "matchScore": 15,
+  "risks": ["岗位方向完全不匹配：应聘销售岗，目标岗位为Python后端工程师", "技术栈无任何Python/Django/Kubernetes相关经验描述", "无微服务、Docker、代码开发或技术管理背景"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["您是否同时在寻求技术类岗位机会？是否有Python后端开发相关项目或技能储备？", "您过往工作中是否参与过与技术团队深度协作的售前/解决方案架构工作？能否举例说明？"]
+}
+2026-05-20 10:53:20.205 [http-nio-8080-exec-4] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [0894beef] - [d389db8c] 材料 [text-61f16e] 提取的 JSON: {
+  "tags": ["销售管理", "大客户拓展", "团队赋能"],
+  "matchScore": 15,
+  "risks": ["岗位方向完全不匹配：应聘销售岗，目标岗位为Python后端工程师", "技术栈无任何Python/Django/Kubernetes相关经验描述", "无微服务、Docker、代码开发或技术管理背景"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["您是否同时在寻求技术类岗位机会？是否有Python后端开发相关项目或技能储备？", "您过往工作中是否参与过与技术团队深度协作的售前/解决方案架构工作？能否举例说明？"]
+}
+2026-05-20 10:53:20.206 [http-nio-8080-exec-4] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [0894beef] - [d389db8c] 材料 [text-61f16e] 分析完成, 匹配度: 15, 动作: REJECT
+2026-05-20 10:53:20.206 [http-nio-8080-exec-4] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [0894beef] - [d389db8c] 批量分析完成, 成功: 1, 失败: 0, 总计: 1
+2026-05-20 10:53:20.222 [http-nio-8080-exec-4] INFO  c.e.r.service.AnalysisHistoryService [0894beef] - 分析会话已保存: id=9, traceId=d389db8c, 结果数=1
+2026-05-20 10:53:20.226 [http-nio-8080-exec-4] INFO  c.e.r.c.RecruitmentAgentController [0894beef] - 纯文本分析请求处理完成，状态码: 200
+2026-05-20 10:53:37.549 [http-nio-8080-exec-5] INFO  c.e.r.c.RecruitmentAgentController [27ed1f81] - 收到文件上传分析请求，文件数量: 3
+2026-05-20 10:53:37.552 [http-nio-8080-exec-5] INFO  c.e.r.c.RecruitmentAgentController [27ed1f81] - 已加载文件 [候选人2], 原始文件名: 候选人2.txt, 文本长度: 451
+2026-05-20 10:53:37.553 [http-nio-8080-exec-5] INFO  c.e.r.c.RecruitmentAgentController [27ed1f81] - 已加载文件 [候选人3], 原始文件名: 候选人3.txt, 文本长度: 434
+2026-05-20 10:53:37.554 [http-nio-8080-exec-5] INFO  c.e.r.c.RecruitmentAgentController [27ed1f81] - 已加载文件 [候选人1], 原始文件名: 候选人1.txt, 文本长度: 449
+2026-05-20 10:53:37.554 [http-nio-8080-exec-5] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [27ed1f81] - [7d8b15d5] 开始批量分析，共 3 份材料，模型: qwen-plus
+2026-05-20 10:53:37.554 [http-nio-8080-exec-5] DEBUG c.e.r.util.PromptLoader [27ed1f81] - 成功加载提示词模板: prompts/system-prompt.txt
+2026-05-20 10:53:37.554 [http-nio-8080-exec-5] DEBUG c.e.r.util.PromptLoader [27ed1f81] - 成功加载提示词模板: prompts/analyze-prompt.txt
+2026-05-20 10:53:37.555 [http-nio-8080-exec-5] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [27ed1f81] - [7d8b15d5] 开始分析材料 [候选人2], 文本长度: 451
+2026-05-20 10:53:37.555 [http-nio-8080-exec-5] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [27ed1f81] - [7d8b15d5] 材料 [候选人2] 渲染后的 Prompt 长度: 926
+2026-05-20 10:53:41.432 [http-nio-8080-exec-5] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [27ed1f81] - [7d8b15d5] 材料 [候选人2] 模型原始响应: {
+  "tags": ["流程优化", "成本控制", "团队建设"],
+  "matchScore": 25,
+  "risks": ["岗位方向严重不匹配：应聘运营总监/部门经理，非Python后端工程师；无Python/Django/FastAPI/微服务/Docker/K8s相关技术经验描述；无任何后端开发项目或技术栈信息"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["您是否具备Python后端开发经验？如有，请说明最近3年主导或深度参与的后端项目及技术栈；", "您对Django或FastAPI框架的使用经验如何？是否有在生产环境部署微服务并使用Docker/Kubernetes的经验？"]
+}
+2026-05-20 10:53:41.434 [http-nio-8080-exec-5] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [27ed1f81] - [7d8b15d5] 材料 [候选人2] 提取的 JSON: {
+  "tags": ["流程优化", "成本控制", "团队建设"],
+  "matchScore": 25,
+  "risks": ["岗位方向严重不匹配：应聘运营总监/部门经理，非Python后端工程师；无Python/Django/FastAPI/微服务/Docker/K8s相关技术经验描述；无任何后端开发项目或技术栈信息"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["您是否具备Python后端开发经验？如有，请说明最近3年主导或深度参与的后端项目及技术栈；", "您对Django或FastAPI框架的使用经验如何？是否有在生产环境部署微服务并使用Docker/Kubernetes的经验？"]
+}
+2026-05-20 10:53:41.434 [http-nio-8080-exec-5] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [27ed1f81] - [7d8b15d5] 材料 [候选人2] 分析完成, 匹配度: 25, 动作: REJECT
+2026-05-20 10:53:41.434 [http-nio-8080-exec-5] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [27ed1f81] - [7d8b15d5] 开始分析材料 [候选人3], 文本长度: 434
+2026-05-20 10:53:41.434 [http-nio-8080-exec-5] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [27ed1f81] - [7d8b15d5] 材料 [候选人3] 渲染后的 Prompt 长度: 909
+2026-05-20 10:53:45.062 [http-nio-8080-exec-5] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [27ed1f81] - [7d8b15d5] 材料 [候选人3] 模型原始响应: {
+  "tags": ["销售管理", "大客户拓展", "团队赋能"],
+  "matchScore": 15,
+  "risks": ["岗位方向完全不匹配：应聘销售岗，目标岗位为Python后端工程师", "技术栈无任何Python/Django/Kubernetes相关经验描述", "无微服务、Docker、代码开发或技术管理背景"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["您是否同时在寻求技术类岗位机会？是否有Python后端开发相关项目或技能储备？", "您过往工作中是否参与过与技术团队深度协作的系统化项目（如CRM定制、API对接等）？"]
+}
+2026-05-20 10:53:45.062 [http-nio-8080-exec-5] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [27ed1f81] - [7d8b15d5] 材料 [候选人3] 提取的 JSON: {
+  "tags": ["销售管理", "大客户拓展", "团队赋能"],
+  "matchScore": 15,
+  "risks": ["岗位方向完全不匹配：应聘销售岗，目标岗位为Python后端工程师", "技术栈无任何Python/Django/Kubernetes相关经验描述", "无微服务、Docker、代码开发或技术管理背景"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["您是否同时在寻求技术类岗位机会？是否有Python后端开发相关项目或技能储备？", "您过往工作中是否参与过与技术团队深度协作的系统化项目（如CRM定制、API对接等）？"]
+}
+2026-05-20 10:53:45.062 [http-nio-8080-exec-5] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [27ed1f81] - [7d8b15d5] 材料 [候选人3] 分析完成, 匹配度: 15, 动作: REJECT
+2026-05-20 10:53:45.062 [http-nio-8080-exec-5] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [27ed1f81] - [7d8b15d5] 开始分析材料 [候选人1], 文本长度: 449
+2026-05-20 10:53:45.062 [http-nio-8080-exec-5] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [27ed1f81] - [7d8b15d5] 材料 [候选人1] 渲染后的 Prompt 长度: 924
+2026-05-20 10:53:48.368 [http-nio-8080-exec-5] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [27ed1f81] - [7d8b15d5] 材料 [候选人1] 模型原始响应: {
+  "tags": ["Python", "微服务", "团队管理", "高可用架构", "Docker/Kubernetes"],
+  "matchScore": 92,
+  "risks": [],
+  "nextAction": "INTERVIEW",
+  "suggestedQuestions": ["请具体说明在微服务改造中您负责的模块边界划分、服务通信机制（如gRPC/HTTP）及如何保障分布式事务一致性？", "您推行的Code Review规范包含哪些关键检查项？如何量化其对代码质量和团队能力提升的效果？"]
+}
+2026-05-20 10:53:48.369 [http-nio-8080-exec-5] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [27ed1f81] - [7d8b15d5] 材料 [候选人1] 提取的 JSON: {
+  "tags": ["Python", "微服务", "团队管理", "高可用架构", "Docker/Kubernetes"],
+  "matchScore": 92,
+  "risks": [],
+  "nextAction": "INTERVIEW",
+  "suggestedQuestions": ["请具体说明在微服务改造中您负责的模块边界划分、服务通信机制（如gRPC/HTTP）及如何保障分布式事务一致性？", "您推行的Code Review规范包含哪些关键检查项？如何量化其对代码质量和团队能力提升的效果？"]
+}
+2026-05-20 10:53:48.369 [http-nio-8080-exec-5] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [27ed1f81] - [7d8b15d5] 材料 [候选人1] 分析完成, 匹配度: 92, 动作: INTERVIEW
+2026-05-20 10:53:48.369 [http-nio-8080-exec-5] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [27ed1f81] - [7d8b15d5] 批量分析完成, 成功: 3, 失败: 0, 总计: 3
+2026-05-20 10:53:48.377 [http-nio-8080-exec-5] INFO  c.e.r.service.AnalysisHistoryService [27ed1f81] - 分析会话已保存: id=10, traceId=7d8b15d5, 结果数=3
+2026-05-20 10:53:48.383 [http-nio-8080-exec-5] INFO  c.e.r.c.RecruitmentAgentController [27ed1f81] - 文件上传分析请求处理完成，分析 3 份材料
+2026-05-20 10:54:01.650 [http-nio-8080-exec-2] INFO  c.e.r.controller.HistoryController [3854bc91] - 查询历史记录，共 10 条会话

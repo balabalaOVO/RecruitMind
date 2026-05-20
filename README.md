@@ -37,8 +37,8 @@
 # src/main/resources/application.yml
 datasource:
   url: jdbc:mysql://localhost:3306/recruitmind?createDatabaseIfNotExist=true
-  username: root
-  password: 1234
+  username: [your username]
+  password: [your password]
 ```
 
 数据库和表由 Hibernate `ddl-auto: update` 自动创建，无需手动建表。
