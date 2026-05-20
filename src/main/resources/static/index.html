@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RecruitMind — 智能招聘分析</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+<style>
+:root {
+  --ink-900: #0d1117;
+  --ink-800: #161b22;
+  --ink-700: #21262d;
+  --ink-600: #30363d;
+  --ink-400: #8b949e;
+  --ink-300: #c9d1d9;
+  --ink-200: #e6edf3;
+  --ink-100: #f0f6fc;
+  --paper: #ffffff;
+  --gold: #d4a853;
+  --gold-light: #f5e6c8;
+  --gold-bg: #fdf8f0;
+  --amber: #e8903c;
+  --coral: #d0583e;
+  --sage: #5a9e6f;
+  --sage-light: #e8f5eb;
+  --indigo: #4a6fa5;
+  --indigo-light: #eaf0f8;
+  --slate: #5c6b7a;
+  --slate-light: #f2f4f6;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,.04), 0 1px 3px rgba(0,0,0,.06);
+  --shadow-md: 0 4px 12px rgba(0,0,0,.05), 0 1px 4px rgba(0,0,0,.08);
+  --shadow-lg: 0 12px 32px rgba(0,0,0,.06), 0 4px 8px rgba(0,0,0,.04);
+  --font-display: 'Noto Serif SC', serif;
+  --font-body: 'Noto Sans SC', system-ui, sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--font-body);
+  background: linear-gradient(175deg, #f8f9fb 0%, #f0f2f5 30%, #f5f4f0 100%);
+  color: var(--ink-800);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* ── Background texture ── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 0%, rgba(212,168,83,.06) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 85% 90%, rgba(74,111,165,.05) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+#app { position: relative; z-index: 1; }
+
+/* ── Header ── */
+.header {
+  background: linear-gradient(160deg, var(--ink-900) 0%, #1a1f2e 40%, #1e2335 100%);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  padding: 0 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(20px);
+}
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+.logo {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 1.35rem;
+  letter-spacing: .02em;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo-icon {
+  width: 36px; height: 36px;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--amber) 100%);
+  border-radius: var(--radius-sm);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(212,168,83,.35);
+}
+.logo-sub {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: .75rem;
+  color: var(--ink-400);
+  letter-spacing: .06em;
+}
+
+/* ── Main layout ── */
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 2rem 4rem;
+  display: grid;
+  grid-template-columns: 460px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* ── Panel ── */
+.panel {
+  background: var(--paper);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(0,0,0,.05);
+  overflow: hidden;
+}
+
+/* ── Tabs ── */
+.tabs {
+  display: flex;
+  background: var(--slate-light);
+  padding: 4px;
+  gap: 4px;
+}
+.tab-btn {
+  flex: 1;
+  padding: 10px 12px;
+  border: none;
+  background: transparent;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: .85rem;
+  font-weight: 500;
+  color: var(--slate);
+  cursor: pointer;
+  transition: all .2s;
+  white-space: nowrap;
+}
+.tab-btn:hover { color: var(--ink-800); }
+.tab-btn.active {
+  background: var(--paper);
+  color: var(--ink-900);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ── Tab content ── */
+.tab-content { padding: 1.25rem; }
+.tab-content h3 {
+  font-family: var(--font-display);
+  font-size: .95rem;
+  font-weight: 700;
+  color: var(--ink-800);
+  margin-bottom: .75rem;
+}
+.textarea {
+  width: 100%;
+  min-height: 180px;
+  padding: 12px 14px;
+  border: 1.5px solid var(--ink-600);
+  border-radius: var(--radius-md);
+  font-family: 'SF Mono', 'Cascadia Code', 'Consolas', monospace;
+  font-size: .82rem;
+  line-height: 1.6;
+  resize: vertical;
+  background: #fafbfc;
+  color: var(--ink-800);
+  transition: border-color .2s, box-shadow .2s;
+  outline: none;
+}
+.textarea:focus {
+  border-color: var(--indigo);
+  box-shadow: 0 0 0 3px rgba(74,111,165,.12);
+}
+.textarea.plain {
+  font-family: var(--font-body);
+  font-size: .88rem;
+}
+
+/* ── File drop zone ── */
+.drop-zone {
+  border: 2px dashed var(--ink-600);
+  border-radius: var(--radius-md);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all .2s;
+  background: #fafbfc;
+}
+.drop-zone:hover, .drop-zone.dragover {
+  border-color: var(--indigo);
+  background: var(--indigo-light);
+}
+.drop-zone-icon {
+  font-size: 2rem;
+  margin-bottom: .5rem;
+  opacity: .6;
+}
+.drop-zone p { font-size: .85rem; color: var(--slate); }
+.drop-zone .file-hint { font-size: .75rem; color: var(--ink-400); margin-top: .25rem; }
+.file-list {
+  margin-top: .75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.file-tag {
+  font-size: .78rem;
+  background: var(--indigo-light);
+  color: var(--indigo);
+  padding: 3px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.file-tag .remove-file {
+  cursor: pointer;
+  font-weight: 700;
+  opacity: .5;
+}
+.file-tag .remove-file:hover { opacity: 1; }
+
+.input-row {
+  margin-top: .75rem;
+}
+.input-row label {
+  font-size: .8rem;
+  font-weight: 600;
+  color: var(--slate);
+  display: block;
+  margin-bottom: 4px;
+}
+.input-row input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1.5px solid var(--ink-600);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: .85rem;
+  outline: none;
+  transition: border-color .2s;
+}
+.input-row input:focus { border-color: var(--indigo); }
+
+/* ── Buttons ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: .88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .2s;
+  white-space: nowrap;
+}
+.btn:active { transform: scale(.97); }
+.btn-primary {
+  background: linear-gradient(135deg, var(--ink-900) 0%, #1e2440 100%);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(13,17,23,.25);
+}
+.btn-primary:hover {
+  box-shadow: 0 4px 16px rgba(13,17,23,.35);
+  transform: translateY(-1px);
+}
+.btn-gold {
+  background: linear-gradient(135deg, #d4a853 0%, #c9953a 100%);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(212,168,83,.35);
+  font-weight: 700;
+  font-size: .92rem;
+  padding: 12px 28px;
+  width: 100%;
+  justify-content: center;
+}
+.btn-gold:hover {
+  box-shadow: 0 4px 16px rgba(212,168,83,.5);
+  transform: translateY(-1px);
+}
+.btn-submit {
+  margin-top: 1rem;
+  width: 100%;
+  justify-content: center;
+}
+.actions-row { margin-top: 1.25rem; }
+
+/* ── Divider ── */
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 1.25rem 0;
+  gap: .75rem;
+  color: var(--ink-400);
+  font-size: .75rem;
+  font-weight: 500;
+}
+.divider::before, .divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--ink-600);
+}
+
+/* ── Results area ── */
+.results-header {
+  margin-bottom: 1.25rem;
+}
+.results-header h2 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ink-800);
+}
+.results-header .summary {
+  font-size: .8rem;
+  color: var(--slate);
+  margin-top: 2px;
+}
+
+/* ── Result card ── */
+.result-card {
+  background: var(--paper);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(0,0,0,.06);
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: box-shadow .2s, transform .2s;
+}
+.result-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+.card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  background: var(--slate-light);
+  border-bottom: 1px solid rgba(0,0,0,.04);
+}
+.card-id {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: .95rem;
+  color: var(--ink-800);
+}
+.card-body { padding: 1.25rem; }
+
+/* ── Score ring ── */
+.score-row {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.score-ring-wrap {
+  position: relative;
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+}
+.score-ring {
+  transform: rotate(-90deg);
+  width: 72px; height: 72px;
+}
+.score-ring .bg { fill: none; stroke: #e9ecef; stroke-width: 5; }
+.score-ring .fill { fill: none; stroke-width: 5; stroke-linecap: round; transition: stroke-dashoffset .8s cubic-bezier(.4,0,.2,1); }
+.score-ring .fill.high { stroke: var(--sage); }
+.score-ring .fill.mid { stroke: var(--amber); }
+.score-ring .fill.low { stroke: var(--coral); }
+.score-value {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--ink-800);
+}
+.score-label {
+  font-size: .78rem;
+  color: var(--slate);
+}
+
+/* ── Tags ── */
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; }
+.tag {
+  font-size: .78rem;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+  background: linear-gradient(135deg, #eef2f7 0%, #e8ecf3 100%);
+  color: var(--indigo);
+  border: 1px solid rgba(74,111,165,.15);
+}
+
+/* ── Next action ── */
+.action-badge {
+  font-size: .8rem;
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: 20px;
+  letter-spacing: .02em;
+}
+.action-INTERVIEW { background: var(--sage-light); color: #2d5a3a; }
+.action-PHONE_SCREEN { background: var(--indigo-light); color: #2d4a6a; }
+.action-REJECT { background: #fce8e4; color: #8b3a2a; }
+.action-NEED_MORE_INFO { background: #fef3e4; color: #8b5a1a; }
+
+/* ── Section titles ── */
+.section-label {
+  font-size: .72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--ink-400);
+  margin-bottom: .4rem;
+}
+.risk-item, .question-item {
+  font-size: .84rem;
+  padding: 6px 0;
+  color: var(--ink-800);
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.risk-item::before { content: '⚠'; flex-shrink: 0; font-size: .85rem; }
+.question-item::before { content: '▸'; flex-shrink: 0; color: var(--gold); font-weight: 700; }
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: .75rem;
+}
+.card-grid .card-col {
+  background: var(--slate-light);
+  border-radius: var(--radius-md);
+  padding: .75rem 1rem;
+}
+
+/* ── Empty state ── */
+.empty-state {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--ink-400);
+}
+.empty-state .empty-icon { font-size: 3rem; margin-bottom: .75rem; opacity: .5; }
+.empty-state p { font-size: .9rem; }
+
+/* ── Loading ── */
+.loading-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  gap: 1rem;
+}
+.spinner {
+  width: 40px; height: 40px;
+  border: 3px solid var(--ink-200);
+  border-top-color: var(--gold);
+  border-radius: 50%;
+  animation: spin .8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.loading-text { font-size: .88rem; color: var(--slate); font-weight: 500; }
+
+/* ── Error ── */
+.error-banner {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+  padding: .75rem 1rem;
+  border-radius: var(--radius-md);
+  font-size: .84rem;
+  margin-bottom: 1rem;
+}
+
+/* ── Fade transition ── */
+.fade-enter-active, .fade-leave-active { transition: opacity .3s, transform .3s; }
+.fade-enter-from, .fade-leave-to { opacity: 0; transform: translateY(8px); }
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr;
+    padding: 1.25rem;
+  }
+  .card-grid { grid-template-columns: 1fr; }
+  .header { padding: 0 1rem; }
+  .logo { font-size: 1.1rem; }
+}
+</style>
+</head>
+<body>
+<div id="app">
+
+<!-- Header -->
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">
+      <div class="logo-icon">&#9670;</div>
+      <div>
+        RecruitMind
+        <div class="logo-sub">智能招聘分析引擎</div>
+      </div>
+    </div>
+    <span style="color:var(--ink-400);font-size:.8rem">v1.0 MVP</span>
+  </div>
+</header>
+
+<!-- API base URL settings banner (shown when not served from backend) -->
+<div v-if="showSettings" style="background:#fef9e7;border-bottom:1px solid #f5d98b;padding:.6rem 2rem">
+  <div style="max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:.75rem;font-size:.84rem">
+    <span style="font-weight:600;color:#8b6914">&#9888; 未检测到后端连接</span>
+    <span style="color:#6b5a2a">API 地址：</span>
+    <input v-model="apiBase" style="padding:4px 10px;border:1.5px solid #d4a853;border-radius:4px;font-family:monospace;font-size:.82rem;width:240px" placeholder="http://localhost:8080">
+    <button @click="saveApiBase" style="padding:4px 14px;background:#d4a853;color:#fff;border:none;border-radius:4px;font-weight:600;cursor:pointer;font-size:.8rem">确认</button>
+    <span style="color:#8b6914;font-size:.76rem">设置后保存在浏览器中</span>
+  </div>
+</div>
+
+<!-- Main -->
+<main class="main">
+
+  <!-- Left: Input Panel -->
+  <section class="panel">
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab-btn" :class="{ active: mode === 'json' }" @click="mode = 'json'">JSON 输入</button>
+      <button class="tab-btn" :class="{ active: mode === 'text' }" @click="mode = 'text'">文本输入</button>
+      <button class="tab-btn" :class="{ active: mode === 'upload' }" @click="mode = 'upload'">文件上传</button>
+    </div>
+
+    <!-- JSON mode -->
+    <div class="tab-content" v-if="mode === 'json'">
+      <h3>结构化 JSON 提交</h3>
+      <textarea class="textarea" v-model="jsonBody" placeholder='{"materials": [{"id": "...", "text": "..."}], "jobDescription": "..."}'></textarea>
+      <button class="btn btn-primary btn-submit" @click="submitJson" :disabled="loading">
+        <span v-if="loading" class="spinner" style="width:18px;height:18px;border-width:2px"></span>
+        {{ loading ? '分析中…' : '提交分析' }}
+      </button>
+    </div>
+
+    <!-- Text mode -->
+    <div class="tab-content" v-if="mode === 'text'">
+      <h3>纯文本输入</h3>
+      <textarea class="textarea plain" v-model="textBody" placeholder="直接粘贴候选人简历或项目材料文本…"></textarea>
+      <button class="btn btn-primary btn-submit" @click="submitText" :disabled="loading">
+        {{ loading ? '分析中…' : '提交分析' }}
+      </button>
+    </div>
+
+    <!-- File upload mode -->
+    <div class="tab-content" v-if="mode === 'upload'">
+      <h3>上传文本文件</h3>
+      <div class="drop-zone"
+           :class="{ dragover: dragOver }"
+           @click="$refs.fileInput.click()"
+           @dragover.prevent="dragOver = true"
+           @dragleave.prevent="dragOver = false"
+           @drop.prevent="handleDrop">
+        <div class="drop-zone-icon">&#128196;</div>
+        <p>点击选择或拖拽 .txt 文件到此处</p>
+        <div class="file-hint">支持多文件上传，每份文件作为一份材料</div>
+      </div>
+      <input type="file" ref="fileInput" accept=".txt,.text,text/plain" multiple hidden @change="handleFileSelect">
+      <div class="file-list" v-if="selectedFiles.length">
+        <span class="file-tag" v-for="(f, i) in selectedFiles" :key="i">
+          {{ f.name }}
+          <span class="remove-file" @click="removeFile(i)">&times;</span>
+        </span>
+      </div>
+      <div class="input-row">
+        <label>岗位描述（选填）</label>
+        <input type="text" v-model="uploadJobDesc" placeholder="留空使用系统默认岗位描述">
+      </div>
+      <button class="btn btn-primary btn-submit" @click="submitUpload" :disabled="loading || !selectedFiles.length">
+        {{ loading ? '分析中…' : '上传并分析' }}
+      </button>
+    </div>
+
+    <!-- Divider + Quick sample run -->
+    <div style="padding: 0 1.25rem 1.25rem;">
+      <div class="divider">快速体验</div>
+      <button class="btn btn-gold" @click="runSamples" :disabled="loading">
+        <span v-if="sampleLoading" class="spinner" style="width:18px;height:18px;border-width:2px;border-top-color:#fff"></span>
+        &#9889; {{ sampleLoading ? '正在分析 3 份样例材料…' : '一键分析样例（3份材料）' }}
+      </button>
+    </div>
+  </section>
+
+  <!-- Right: Results -->
+  <section>
+    <!-- Error -->
+    <div class="error-banner" v-if="error">{{ error }}</div>
+
+    <!-- Loading -->
+    <div class="loading-overlay panel" v-if="loading && !results.length">
+      <div class="spinner"></div>
+      <div class="loading-text">AI 正在分析材料，请稍候…</div>
+    </div>
+
+    <!-- Empty -->
+    <div class="empty-state panel" v-if="!loading && !results.length && !error">
+      <div class="empty-icon">&#128269;</div>
+      <p>提交材料后，分析结果将显示在此处</p>
+      <p style="font-size:.78rem;margin-top:.25rem">支持候选人简历和项目材料两种类型</p>
+    </div>
+
+    <!-- Results -->
+    <div v-if="results.length">
+      <div class="results-header">
+        <h2>分析结果</h2>
+        <div class="summary">共分析 {{ results.length }} 份材料</div>
+      </div>
+
+      <transition-group name="fade">
+        <article class="result-card" v-for="r in results" :key="r.inputId">
+          <div class="card-head">
+            <span class="card-id">&#128100; {{ r.inputId }}</span>
+            <span class="action-badge" :class="'action-' + r.analysis.nextAction">
+              {{ actionLabel(r.analysis.nextAction) }}
+            </span>
+          </div>
+          <div class="card-body">
+            <!-- Score row -->
+            <div class="score-row">
+              <div class="score-ring-wrap">
+                <svg class="score-ring" viewBox="0 0 72 72">
+                  <circle class="bg" cx="36" cy="36" r="31"/>
+                  <circle class="fill" :class="scoreClass(r.analysis.matchScore)"
+                    cx="36" cy="36" r="31"
+                    :stroke-dasharray="circumference"
+                    :stroke-dashoffset="dashOffset(r.analysis.matchScore)"/>
+                </svg>
+                <div class="score-value">{{ r.analysis.matchScore }}</div>
+              </div>
+              <div>
+                <div class="score-label">匹配度评分</div>
+                <div style="font-size:.82rem;font-weight:600;color:var(--ink-800)">
+                  {{ r.analysis.matchScore >= 70 ? '高度匹配' : r.analysis.matchScore >= 40 ? '中等匹配' : '匹配度较低' }}
+                </div>
+              </div>
+            </div>
+
+            <!-- Tags -->
+            <div class="section-label">标签</div>
+            <div class="tag-list">
+              <span class="tag" v-for="t in r.analysis.tags" :key="t">{{ t }}</span>
+            </div>
+
+            <!-- Risks & Questions grid -->
+            <div class="card-grid">
+              <div class="card-col">
+                <div class="section-label">风险点</div>
+                <div v-if="r.analysis.risks && r.analysis.risks.length">
+                  <div class="risk-item" v-for="risk in r.analysis.risks" :key="risk">{{ risk }}</div>
+                </div>
+                <div v-else style="font-size:.82rem;color:var(--sage)">&#10003; 未发现明显风险</div>
+              </div>
+              <div class="card-col">
+                <div class="section-label">建议追问</div>
+                <div v-if="r.analysis.suggestedQuestions && r.analysis.suggestedQuestions.length">
+                  <div class="question-item" v-for="q in r.analysis.suggestedQuestions" :key="q">{{ q }}</div>
+                </div>
+                <div v-else style="font-size:.82rem;color:var(--ink-400)">暂无建议</div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </transition-group>
+    </div>
+  </section>
+
+</main>
+
+</div><!-- /#app -->
+
+<script>
+const { createApp, ref, computed, watch, onMounted } = Vue;
+
+// Backend address — saved to localStorage so it survives refreshes
+const STORAGE_KEY = 'recruitmind_api_base';
+const DEFAULT_BASE = 'http://localhost:8080';
+
+createApp({
+  setup() {
+    const mode = ref('json');
+    const loading = ref(false);
+    const sampleLoading = ref(false);
+    const error = ref('');
+    const results = ref([]);
+
+    // API base URL — if the page is served by the backend itself (same origin),
+    // we can use relative paths. Otherwise use the configured base.
+    const servedByBackend = window.location.port === '8080';
+    const savedBase = localStorage.getItem(STORAGE_KEY);
+    const apiBase = ref(savedBase || (servedByBackend ? '' : DEFAULT_BASE));
+    const showSettings = ref(!servedByBackend && !savedBase);
+
+    function apiUrl(path) {
+      return apiBase.value ? apiBase.value + path : path;
+    }
+
+    watch(apiBase, (val) => {
+      if (val) localStorage.setItem(STORAGE_KEY, val);
+      else localStorage.removeItem(STORAGE_KEY);
+    });
+
+    function saveApiBase() {
+      showSettings.value = false;
+    }
+
+    // JSON mode
+    const jsonBody = ref(JSON.stringify({
+      materials: [
+        {
+          id: "candidate_1",
+          text: "张三，8年Python后端开发经验，其中3年担任技术负责人。精通Django、FastAPI、Flask等主流框架，主导过日均千万级请求的微服务架构设计与重构。"
+        },
+        {
+          id: "candidate_2",
+          text: "李四，2年Java后端开发经验，近3个月开始自学Python。熟悉Spring Boot框架，对Django有初步了解但未参与实际项目。"
+        }
+      ],
+      jobDescription: "高级Python后端工程师，5年以上经验，熟悉Django/FastAPI，有微服务架构经验"
+    }, null, 2));
+
+    // Text mode
+    const textBody = ref('');
+
+    // File upload mode
+    const selectedFiles = ref([]);
+    const uploadJobDesc = ref('');
+    const dragOver = ref(false);
+    const fileInput = ref(null);
+
+    // Score ring
+    const circumference = 2 * Math.PI * 31; // ~194.78
+
+    function dashOffset(score) {
+      const pct = (score || 0) / 100;
+      return circumference * (1 - pct);
+    }
+    function scoreClass(score) {
+      if (score >= 70) return 'high';
+      if (score >= 40) return 'mid';
+      return 'low';
+    }
+    function actionLabel(a) {
+      const map = { INTERVIEW: '预约面试', PHONE_SCREEN: '电话筛选', REJECT: '建议拒绝', NEED_MORE_INFO: '需补充信息' };
+      return map[a] || a;
+    }
+
+    async function apiCall(path, options) {
+      error.value = '';
+      const url = apiUrl(path);
+      let resp;
+      try {
+        resp = await fetch(url, options);
+      } catch (e) {
+        // Network error — most likely CORS or backend not running
+        if (e.message.includes('Failed to fetch') || e.name === 'TypeError') {
+          throw new Error(
+            '无法连接后端服务。请确认：\n' +
+            '1. 后端已启动（默认 http://localhost:8080）\n' +
+            '2. 顶部 API 地址配置正确\n' +
+            '3. 如果从 IDE 打开此页面，需要先启动 Spring Boot 应用，然后访问 http://localhost:8080/'
+          );
+        }
+        throw e;
+      }
+      const data = await resp.json();
+      if (data.code !== 200) {
+        throw new Error(data.message || data.detail || '请求失败');
+      }
+      return data;
+    }
+
+    function handleResponse(data) {
+      results.value = data.data?.results || [];
+      error.value = '';
+    }
+
+    function handleErr(e) {
+      error.value = e.message;
+      console.error(e);
+    }
+
+    // JSON submit
+    async function submitJson() {
+      loading.value = true;
+      try {
+        let parsed;
+        try { parsed = JSON.parse(jsonBody.value); } catch {
+          throw new Error('JSON 格式错误，请检查语法');
+        }
+        const data = await apiCall('/api/v1/agent/analyze', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(parsed)
+        });
+        handleResponse(data);
+      } catch (e) { handleErr(e); }
+      finally { loading.value = false; }
+    }
+
+    // Text submit
+    async function submitText() {
+      if (!textBody.value.trim()) { error.value = '请输入文本内容'; return; }
+      loading.value = true;
+      try {
+        const data = await apiCall('/api/v1/agent/analyze/text', {
+          method: 'POST',
+          headers: { 'Content-Type': 'text/plain' },
+          body: textBody.value.trim()
+        });
+        handleResponse(data);
+      } catch (e) { handleErr(e); }
+      finally { loading.value = false; }
+    }
+
+    // File upload
+    function handleFileSelect(e) {
+      const files = Array.from(e.target.files || []);
+      selectedFiles.value = [...selectedFiles.value, ...files];
+      if (fileInput.value) fileInput.value.value = '';
+    }
+    function handleDrop(e) {
+      dragOver.value = false;
+      const files = Array.from(e.dataTransfer.files || []).filter(f => f.name.endsWith('.txt') || f.type === 'text/plain');
+      selectedFiles.value = [...selectedFiles.value, ...files];
+    }
+    function removeFile(i) { selectedFiles.value.splice(i, 1); }
+
+    async function submitUpload() {
+      if (!selectedFiles.value.length) { error.value = '请先选择文件'; return; }
+      loading.value = true;
+      try {
+        const form = new FormData();
+        selectedFiles.value.forEach(f => form.append('files', f));
+        if (uploadJobDesc.value.trim()) form.append('jobDescription', uploadJobDesc.value.trim());
+        const data = await apiCall('/api/v1/agent/analyze/upload', {
+          method: 'POST',
+          body: form
+        });
+        handleResponse(data);
+      } catch (e) { handleErr(e); }
+      finally { loading.value = false; }
+    }
+
+    // Sample run
+    async function runSamples() {
+      sampleLoading.value = true;
+      error.value = '';
+      try {
+        const data = await apiCall('/api/v1/agent/sample-run', { method: 'GET' });
+        handleResponse(data);
+      } catch (e) { handleErr(e); }
+      finally { sampleLoading.value = false; }
+    }
+
+    return {
+      mode, loading, sampleLoading, error, results,
+      apiBase, showSettings, saveApiBase,
+      jsonBody, textBody,
+      selectedFiles, uploadJobDesc, dragOver, fileInput,
+      circumference, dashOffset, scoreClass, actionLabel,
+      submitJson, submitText,
+      handleFileSelect, handleDrop, removeFile, submitUpload,
+      runSamples
+    };
+  }
+}).mount('#app');
+</script>
+</body>
+</html>

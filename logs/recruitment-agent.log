@@ -1,350 +1,333 @@
-2026-05-19 22:27:02.616 [main] INFO  c.e.r.i.RecruitmentAgentApiTest [] - Starting RecruitmentAgentApiTest using Java 17.0.16 with PID 16404 (started by hjias in D:\A_ideaProjects-Web-AI\RecruitMind)
-2026-05-19 22:27:02.619 [main] DEBUG c.e.r.i.RecruitmentAgentApiTest [] - Running with Spring Boot v3.2.0, Spring v6.1.1
-2026-05-19 22:27:02.621 [main] INFO  c.e.r.i.RecruitmentAgentApiTest [] - The following 1 profile is active: "test"
-2026-05-19 22:27:04.854 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [] - Exposing 3 endpoint(s) beneath base path '/actuator'
-2026-05-19 22:27:04.956 [main] INFO  c.e.r.i.RecruitmentAgentApiTest [] - Started RecruitmentAgentApiTest in 2.737 seconds (process running for 3.685)
-2026-05-19 22:28:55.971 [main] INFO  c.e.r.i.RecruitmentAgentApiTest [] - Starting RecruitmentAgentApiTest using Java 17.0.16 with PID 24636 (started by hjias in D:\A_ideaProjects-Web-AI\RecruitMind)
-2026-05-19 22:28:55.974 [main] DEBUG c.e.r.i.RecruitmentAgentApiTest [] - Running with Spring Boot v3.2.0, Spring v6.1.1
-2026-05-19 22:28:55.975 [main] INFO  c.e.r.i.RecruitmentAgentApiTest [] - The following 1 profile is active: "test"
-2026-05-19 22:28:58.485 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [] - Exposing 3 endpoint(s) beneath base path '/actuator'
-2026-05-19 22:28:58.552 [main] INFO  c.e.r.i.RecruitmentAgentApiTest [] - Started RecruitmentAgentApiTest in 2.931 seconds (process running for 3.809)
-2026-05-19 22:29:09.146 [main] INFO  c.e.r.RecruitmentAgentApplication [] - Starting RecruitmentAgentApplication using Java 17.0.16 with PID 27104 (D:\A_ideaProjects-Web-AI\RecruitMind\target\classes started by hjias in D:\A_ideaProjects-Web-AI\RecruitMind)
-2026-05-19 22:29:09.148 [main] DEBUG c.e.r.RecruitmentAgentApplication [] - Running with Spring Boot v3.2.0, Spring v6.1.1
-2026-05-19 22:29:09.149 [main] INFO  c.e.r.RecruitmentAgentApplication [] - No active profile set, falling back to 1 default profile: "default"
-2026-05-19 22:29:10.001 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat initialized with port 8080 (http)
-2026-05-19 22:29:10.008 [main] INFO  o.a.catalina.core.StandardService [] - Starting service [Tomcat]
-2026-05-19 22:29:10.008 [main] INFO  o.a.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.16]
-2026-05-19 22:29:10.051 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
-2026-05-19 22:29:10.051 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 872 ms
-2026-05-19 22:29:10.820 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [] - Exposing 3 endpoint(s) beneath base path '/actuator'
-2026-05-19 22:29:10.856 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat started on port 8080 (http) with context path ''
-2026-05-19 22:29:10.866 [main] INFO  c.e.r.RecruitmentAgentApplication [] - Started RecruitmentAgentApplication in 2.089 seconds (process running for 2.487)
-2026-05-19 22:29:11.192 [RMI TCP Connection(3)-10.138.243.121] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-19 22:29:11.192 [RMI TCP Connection(3)-10.138.243.121] INFO  o.s.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
-2026-05-19 22:29:11.193 [RMI TCP Connection(3)-10.138.243.121] INFO  o.s.web.servlet.DispatcherServlet [] - Completed initialization in 1 ms
-2026-05-19 22:32:41.255 [main] INFO  c.e.r.RecruitmentAgentApplication [] - Starting RecruitmentAgentApplication using Java 17.0.16 with PID 8484 (D:\A_ideaProjects-Web-AI\RecruitMind\target\classes started by hjias in D:\A_ideaProjects-Web-AI\RecruitMind)
-2026-05-19 22:32:41.258 [main] DEBUG c.e.r.RecruitmentAgentApplication [] - Running with Spring Boot v3.2.0, Spring v6.1.1
-2026-05-19 22:32:41.258 [main] INFO  c.e.r.RecruitmentAgentApplication [] - No active profile set, falling back to 1 default profile: "default"
-2026-05-19 22:32:42.104 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat initialized with port 8080 (http)
-2026-05-19 22:32:42.112 [main] INFO  o.a.catalina.core.StandardService [] - Starting service [Tomcat]
-2026-05-19 22:32:42.112 [main] INFO  o.a.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.16]
-2026-05-19 22:32:42.154 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
-2026-05-19 22:32:42.155 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 867 ms
-2026-05-19 22:32:42.922 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [] - Exposing 3 endpoint(s) beneath base path '/actuator'
-2026-05-19 22:32:42.958 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat started on port 8080 (http) with context path ''
-2026-05-19 22:32:42.966 [main] INFO  c.e.r.RecruitmentAgentApplication [] - Started RecruitmentAgentApplication in 2.079 seconds (process running for 2.477)
-2026-05-19 22:32:43.226 [RMI TCP Connection(3)-10.138.243.121] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-19 22:32:43.226 [RMI TCP Connection(3)-10.138.243.121] INFO  o.s.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
-2026-05-19 22:32:43.227 [RMI TCP Connection(3)-10.138.243.121] INFO  o.s.web.servlet.DispatcherServlet [] - Completed initialization in 1 ms
-2026-05-19 22:33:09.135 [http-nio-8080-exec-10] ERROR c.e.r.c.RecruitmentAgentController [cbc55795] - 处理请求时发生异常
-org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<com.example.recruitmentagent.dto.response.AnalyzeResponse> com.example.recruitmentagent.controller.RecruitmentAgentController.analyze(com.example.recruitmentagent.dto.request.AnalyzeRequest)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:162)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:134)
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:218)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:171)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at com.example.recruitmentagent.config.LoggingConfig.lambda$traceIdFilter$0(LoggingConfig.java:19)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-2026-05-19 22:34:16.421 [http-nio-8080-exec-2] INFO  c.e.r.c.RecruitmentAgentController [59153ccb] - 收到分析请求，材料数量: 2
-2026-05-19 22:34:16.423 [http-nio-8080-exec-2] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [59153ccb] - [ed64f336] 开始批量分析，共 2 份材料，模型: qwen-plus
-2026-05-19 22:34:16.441 [http-nio-8080-exec-2] DEBUG c.e.r.util.PromptLoader [59153ccb] - 成功加载提示词模板: prompts/system-prompt.txt
-2026-05-19 22:34:16.454 [http-nio-8080-exec-2] DEBUG c.e.r.util.PromptLoader [59153ccb] - 成功加载提示词模板: prompts/analyze-prompt.txt
-2026-05-19 22:34:16.454 [http-nio-8080-exec-2] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [59153ccb] - [ed64f336] 开始分析材料 [resume1], 文本长度: 10
-2026-05-19 22:34:16.455 [http-nio-8080-exec-2] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [59153ccb] - [ed64f336] 材料 [resume1] 渲染后的 Prompt 长度: 337
-2026-05-19 22:34:19.973 [http-nio-8080-exec-2] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [59153ccb] - [ed64f336] 材料 [resume1] 模型原始响应: {
-  "tags": ["Python", "项目管理", "数据分析"],
-  "matchScore": 78,
-  "risks": ["缺乏云计算平台实际部署经验", "简历中未体现跨部门协作案例"],
-  "nextAction": "INTERVIEW",
-  "suggestedQuestions": ["请具体描述您主导过的最复杂的数据分析项目，包括技术选型、团队协作和业务影响", "在资源受限情况下，您如何优先处理多个并行任务？能否举例说明"]
+2026-05-20 08:25:40.024 [main] INFO  c.e.r.RecruitmentAgentApplication [] - Starting RecruitmentAgentApplication using Java 17.0.16 with PID 16112 (D:\A_ideaProjects-Web-AI\RecruitMind\target\classes started by hjias in D:\A_ideaProjects-Web-AI\RecruitMind)
+2026-05-20 08:25:40.031 [main] DEBUG c.e.r.RecruitmentAgentApplication [] - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-05-20 08:25:40.034 [main] INFO  c.e.r.RecruitmentAgentApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-05-20 08:25:41.078 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat initialized with port 8080 (http)
+2026-05-20 08:25:41.086 [main] INFO  o.a.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-05-20 08:25:41.089 [main] INFO  o.a.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-05-20 08:25:41.140 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
+2026-05-20 08:25:41.140 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 1076 ms
+2026-05-20 08:25:42.037 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [] - Exposing 3 endpoint(s) beneath base path '/actuator'
+2026-05-20 08:25:42.074 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat started on port 8080 (http) with context path ''
+2026-05-20 08:25:42.084 [main] INFO  c.e.r.RecruitmentAgentApplication [] - Started RecruitmentAgentApplication in 2.497 seconds (process running for 3.002)
+2026-05-20 08:25:42.518 [RMI TCP Connection(3)-10.128.3.65] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-20 08:25:42.519 [RMI TCP Connection(3)-10.128.3.65] INFO  o.s.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
+2026-05-20 08:25:42.520 [RMI TCP Connection(3)-10.128.3.65] INFO  o.s.web.servlet.DispatcherServlet [] - Completed initialization in 1 ms
+2026-05-20 08:27:08.803 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver [a50ef5db] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2026-05-20 08:27:26.399 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver [de94020b] - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type is not supported]
+2026-05-20 08:27:57.260 [http-nio-8080-exec-3] INFO  c.e.r.c.RecruitmentAgentController [e912f2f3] - 收到纯文本分析请求，文本长度: 5
+2026-05-20 08:27:57.262 [http-nio-8080-exec-3] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [e912f2f3] - [abca0e79] 开始批量分析，共 1 份材料，模型: qwen-plus
+2026-05-20 08:27:57.269 [http-nio-8080-exec-3] DEBUG c.e.r.util.PromptLoader [e912f2f3] - 成功加载提示词模板: prompts/system-prompt.txt
+2026-05-20 08:27:57.272 [http-nio-8080-exec-3] DEBUG c.e.r.util.PromptLoader [e912f2f3] - 成功加载提示词模板: prompts/analyze-prompt.txt
+2026-05-20 08:27:57.273 [http-nio-8080-exec-3] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [e912f2f3] - [abca0e79] 开始分析材料 [text-49bf9f], 文本长度: 5
+2026-05-20 08:27:57.274 [http-nio-8080-exec-3] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [e912f2f3] - [abca0e79] 材料 [text-49bf9f] 渲染后的 Prompt 长度: 480
+2026-05-20 08:28:01.061 [http-nio-8080-exec-3] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [e912f2f3] - [abca0e79] 材料 [text-49bf9f] 模型原始响应: {
+  "tags": ["未知", "未提供信息", "无有效材料"],
+  "matchScore": 0,
+  "risks": ["未提供任何候选人简历或项目材料", "无法评估技术栈、经验年限及管理能力", "缺乏基本信息导致完全无法匹配岗位要求"],
+  "nextAction": "NEED_MORE_INFO",
+  "suggestedQuestions": ["请提供候选人的详细简历，包括Python开发年限、参与的后端项目及技术栈", "是否有微服务架构设计经验？是否使用过Docker/Kubernetes？是否有团队管理经历？"]
 }
-2026-05-19 22:34:19.973 [http-nio-8080-exec-2] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [59153ccb] - [ed64f336] 材料 [resume1] 提取的 JSON: {
-  "tags": ["Python", "项目管理", "数据分析"],
-  "matchScore": 78,
-  "risks": ["缺乏云计算平台实际部署经验", "简历中未体现跨部门协作案例"],
-  "nextAction": "INTERVIEW",
-  "suggestedQuestions": ["请具体描述您主导过的最复杂的数据分析项目，包括技术选型、团队协作和业务影响", "在资源受限情况下，您如何优先处理多个并行任务？能否举例说明"]
+2026-05-20 08:28:01.061 [http-nio-8080-exec-3] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [e912f2f3] - [abca0e79] 材料 [text-49bf9f] 提取的 JSON: {
+  "tags": ["未知", "未提供信息", "无有效材料"],
+  "matchScore": 0,
+  "risks": ["未提供任何候选人简历或项目材料", "无法评估技术栈、经验年限及管理能力", "缺乏基本信息导致完全无法匹配岗位要求"],
+  "nextAction": "NEED_MORE_INFO",
+  "suggestedQuestions": ["请提供候选人的详细简历，包括Python开发年限、参与的后端项目及技术栈", "是否有微服务架构设计经验？是否使用过Docker/Kubernetes？是否有团队管理经历？"]
 }
-2026-05-19 22:34:19.978 [http-nio-8080-exec-2] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [59153ccb] - [ed64f336] 材料 [resume1] 分析完成, 匹配度: 78, 动作: INTERVIEW
-2026-05-19 22:34:19.978 [http-nio-8080-exec-2] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [59153ccb] - [ed64f336] 开始分析材料 [project1], 文本长度: 9
-2026-05-19 22:34:19.978 [http-nio-8080-exec-2] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [59153ccb] - [ed64f336] 材料 [project1] 渲染后的 Prompt 长度: 336
-2026-05-19 22:34:22.665 [http-nio-8080-exec-2] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [59153ccb] - [ed64f336] 材料 [project1] 模型原始响应: {
-  "tags": ["项目管理", "数据分析", "跨部门协作"],
-  "matchScore": 78,
-  "risks": ["缺乏明确的量化成果指标", "未体现岗位要求的行业经验"],
-  "nextAction": "PHONE_SCREEN",
-  "suggestedQuestions": ["请具体说明在该项目中您如何定义和衡量成功指标？", "您是否有过与[目标行业]相关项目的直接经验？能否举例说明？"]
+2026-05-20 08:28:01.068 [http-nio-8080-exec-3] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [e912f2f3] - [abca0e79] 材料 [text-49bf9f] 分析完成, 匹配度: 0, 动作: NEED_MORE_INFO
+2026-05-20 08:28:01.068 [http-nio-8080-exec-3] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [e912f2f3] - [abca0e79] 批量分析完成, 成功: 1, 失败: 0, 总计: 1
+2026-05-20 08:28:01.068 [http-nio-8080-exec-3] INFO  c.e.r.c.RecruitmentAgentController [e912f2f3] - 纯文本分析请求处理完成，状态码: 200
+2026-05-20 08:28:45.445 [http-nio-8080-exec-6] INFO  c.e.r.c.RecruitmentAgentController [af228f88] - 收到纯文本分析请求，文本长度: 506
+2026-05-20 08:28:45.445 [http-nio-8080-exec-6] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [af228f88] - [8ab957b0] 开始批量分析，共 1 份材料，模型: qwen-plus
+2026-05-20 08:28:45.452 [http-nio-8080-exec-6] DEBUG c.e.r.util.PromptLoader [af228f88] - 成功加载提示词模板: prompts/system-prompt.txt
+2026-05-20 08:28:45.452 [http-nio-8080-exec-6] DEBUG c.e.r.util.PromptLoader [af228f88] - 成功加载提示词模板: prompts/analyze-prompt.txt
+2026-05-20 08:28:45.452 [http-nio-8080-exec-6] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [af228f88] - [8ab957b0] 开始分析材料 [text-f97a8e], 文本长度: 505
+2026-05-20 08:28:45.452 [http-nio-8080-exec-6] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [af228f88] - [8ab957b0] 材料 [text-f97a8e] 渲染后的 Prompt 长度: 980
+2026-05-20 08:28:49.189 [http-nio-8080-exec-6] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [af228f88] - [8ab957b0] 材料 [text-f97a8e] 模型原始响应: {
+  "tags": ["Java", "Spring Boot", "AI Engineering"],
+  "matchScore": 45,
+  "risks": ["技能栈以Java为主，缺乏Python后端开发经验", "未体现Django/FastAPI使用经历", "无微服务架构设计及Kubernetes实际项目经验", "无团队管理相关描述"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["您是否有Python后端开发经验？能否介绍一个用Python（如Django或FastAPI）主导开发的项目？", "您是否参与过基于Docker和Kubernetes的生产环境部署与运维？具体承担什么角色？"]
 }
-2026-05-19 22:34:22.672 [http-nio-8080-exec-2] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [59153ccb] - [ed64f336] 材料 [project1] 提取的 JSON: {
-  "tags": ["项目管理", "数据分析", "跨部门协作"],
-  "matchScore": 78,
-  "risks": ["缺乏明确的量化成果指标", "未体现岗位要求的行业经验"],
-  "nextAction": "PHONE_SCREEN",
-  "suggestedQuestions": ["请具体说明在该项目中您如何定义和衡量成功指标？", "您是否有过与[目标行业]相关项目的直接经验？能否举例说明？"]
+2026-05-20 08:28:49.192 [http-nio-8080-exec-6] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [af228f88] - [8ab957b0] 材料 [text-f97a8e] 提取的 JSON: {
+  "tags": ["Java", "Spring Boot", "AI Engineering"],
+  "matchScore": 45,
+  "risks": ["技能栈以Java为主，缺乏Python后端开发经验", "未体现Django/FastAPI使用经历", "无微服务架构设计及Kubernetes实际项目经验", "无团队管理相关描述"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["您是否有Python后端开发经验？能否介绍一个用Python（如Django或FastAPI）主导开发的项目？", "您是否参与过基于Docker和Kubernetes的生产环境部署与运维？具体承担什么角色？"]
 }
-2026-05-19 22:34:22.672 [http-nio-8080-exec-2] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [59153ccb] - [ed64f336] 材料 [project1] 分析完成, 匹配度: 78, 动作: PHONE_SCREEN
-2026-05-19 22:34:22.672 [http-nio-8080-exec-2] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [59153ccb] - [ed64f336] 批量分析完成, 成功: 2, 失败: 0, 总计: 2
-2026-05-19 22:34:22.672 [http-nio-8080-exec-2] INFO  c.e.r.c.RecruitmentAgentController [59153ccb] - 分析请求处理完成，状态码: 200
-2026-05-19 22:37:01.266 [http-nio-8080-exec-8] ERROR c.e.r.c.RecruitmentAgentController [f2b08477] - 处理请求时发生异常
-org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'text/plain;charset=UTF-8' is not supported
-	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:213)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:159)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:134)
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:218)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:171)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at com.example.recruitmentagent.config.LoggingConfig.lambda$traceIdFilter$0(LoggingConfig.java:19)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-2026-05-19 22:39:34.906 [http-nio-8080-exec-9] INFO  c.e.r.c.RecruitmentAgentController [dfff71d0] - 收到分析请求，材料数量: 2
-2026-05-19 22:39:34.907 [http-nio-8080-exec-9] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [dfff71d0] - [e6498465] 开始批量分析，共 2 份材料，模型: qwen-plus
-2026-05-19 22:39:34.908 [http-nio-8080-exec-9] DEBUG c.e.r.util.PromptLoader [dfff71d0] - 成功加载提示词模板: prompts/system-prompt.txt
-2026-05-19 22:39:34.909 [http-nio-8080-exec-9] DEBUG c.e.r.util.PromptLoader [dfff71d0] - 成功加载提示词模板: prompts/analyze-prompt.txt
-2026-05-19 22:39:34.909 [http-nio-8080-exec-9] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [dfff71d0] - [e6498465] 开始分析材料 [resume1], 文本长度: 179
-2026-05-19 22:39:34.910 [http-nio-8080-exec-9] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [dfff71d0] - [e6498465] 材料 [resume1] 渲染后的 Prompt 长度: 663
-2026-05-19 22:39:38.827 [http-nio-8080-exec-9] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [dfff71d0] - [e6498465] 材料 [resume1] 模型原始响应: {
-  "tags": ["Java/Go双语言开发", "高并发系统优化", "Kubernetes/Docker容器化"],
-  "matchScore": 85,
-  "risks": ["未明确体现微服务架构主导经验", "云平台（AWS/GCP/Azure）使用经历未具体说明"],
-  "nextAction": "INTERVIEW",
-  "suggestedQuestions": ["请具体描述您在某科技公司主导或深度参与的微服务拆分、治理及落地过程", "在云平台方面，您是否独立负责过基础设施部署、CI/CD流水线搭建或跨可用区高可用设计？使用的是哪家云厂商及具体服务？"]
+2026-05-20 08:28:49.193 [http-nio-8080-exec-6] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [af228f88] - [8ab957b0] 材料 [text-f97a8e] 分析完成, 匹配度: 45, 动作: REJECT
+2026-05-20 08:28:49.193 [http-nio-8080-exec-6] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [af228f88] - [8ab957b0] 批量分析完成, 成功: 1, 失败: 0, 总计: 1
+2026-05-20 08:28:49.194 [http-nio-8080-exec-6] INFO  c.e.r.c.RecruitmentAgentController [af228f88] - 纯文本分析请求处理完成，状态码: 200
+2026-05-20 08:36:51.638 [main] INFO  c.e.r.RecruitmentAgentApplication [] - Starting RecruitmentAgentApplication using Java 17.0.16 with PID 22208 (D:\A_ideaProjects-Web-AI\RecruitMind\target\classes started by hjias in D:\A_ideaProjects-Web-AI\RecruitMind)
+2026-05-20 08:36:51.656 [main] DEBUG c.e.r.RecruitmentAgentApplication [] - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-05-20 08:36:51.656 [main] INFO  c.e.r.RecruitmentAgentApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-05-20 08:36:52.545 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat initialized with port 8080 (http)
+2026-05-20 08:36:52.557 [main] INFO  o.a.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-05-20 08:36:52.557 [main] INFO  o.a.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-05-20 08:36:52.600 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
+2026-05-20 08:36:52.600 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 906 ms
+2026-05-20 08:36:53.058 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping [] - Adding welcome page: class path resource [static/index.html]
+2026-05-20 08:36:53.363 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [] - Exposing 3 endpoint(s) beneath base path '/actuator'
+2026-05-20 08:36:53.396 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat started on port 8080 (http) with context path ''
+2026-05-20 08:36:53.402 [main] INFO  c.e.r.RecruitmentAgentApplication [] - Started RecruitmentAgentApplication in 2.164 seconds (process running for 2.562)
+2026-05-20 08:36:53.599 [RMI TCP Connection(3)-10.128.3.65] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-20 08:36:53.599 [RMI TCP Connection(3)-10.128.3.65] INFO  o.s.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
+2026-05-20 08:36:53.601 [RMI TCP Connection(3)-10.128.3.65] INFO  o.s.web.servlet.DispatcherServlet [] - Completed initialization in 2 ms
+2026-05-20 08:48:21.630 [http-nio-8080-exec-2] INFO  c.e.r.c.RecruitmentAgentController [8de5699b] - 收到纯文本分析请求，文本长度: 5
+2026-05-20 08:48:21.632 [http-nio-8080-exec-2] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [8de5699b] - [f80bf3c5] 开始批量分析，共 1 份材料，模型: qwen-plus
+2026-05-20 08:48:21.633 [http-nio-8080-exec-2] DEBUG c.e.r.util.PromptLoader [8de5699b] - 成功加载提示词模板: prompts/system-prompt.txt
+2026-05-20 08:48:21.634 [http-nio-8080-exec-2] DEBUG c.e.r.util.PromptLoader [8de5699b] - 成功加载提示词模板: prompts/analyze-prompt.txt
+2026-05-20 08:48:21.634 [http-nio-8080-exec-2] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [8de5699b] - [f80bf3c5] 开始分析材料 [text-fec549], 文本长度: 5
+2026-05-20 08:48:21.634 [http-nio-8080-exec-2] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [8de5699b] - [f80bf3c5] 材料 [text-fec549] 渲染后的 Prompt 长度: 480
+2026-05-20 08:48:24.630 [http-nio-8080-exec-2] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [8de5699b] - [f80bf3c5] 材料 [text-fec549] 模型原始响应: {
+  "tags": ["未知", "信息缺失", "无法评估"],
+  "matchScore": 0,
+  "risks": ["候选人/项目材料为空，无法验证任何技能、经验或背景"],
+  "nextAction": "NEED_MORE_INFO",
+  "suggestedQuestions": ["请提供您的Python开发年限及主导或深度参与的后端项目详情", "请说明您在Django/FastAPI、微服务架构、Docker/Kubernetes及团队管理方面的具体实践和职责"]
 }
-2026-05-19 22:39:38.827 [http-nio-8080-exec-9] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [dfff71d0] - [e6498465] 材料 [resume1] 提取的 JSON: {
-  "tags": ["Java/Go双语言开发", "高并发系统优化", "Kubernetes/Docker容器化"],
-  "matchScore": 85,
-  "risks": ["未明确体现微服务架构主导经验", "云平台（AWS/GCP/Azure）使用经历未具体说明"],
-  "nextAction": "INTERVIEW",
-  "suggestedQuestions": ["请具体描述您在某科技公司主导或深度参与的微服务拆分、治理及落地过程", "在云平台方面，您是否独立负责过基础设施部署、CI/CD流水线搭建或跨可用区高可用设计？使用的是哪家云厂商及具体服务？"]
+2026-05-20 08:48:24.632 [http-nio-8080-exec-2] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [8de5699b] - [f80bf3c5] 材料 [text-fec549] 提取的 JSON: {
+  "tags": ["未知", "信息缺失", "无法评估"],
+  "matchScore": 0,
+  "risks": ["候选人/项目材料为空，无法验证任何技能、经验或背景"],
+  "nextAction": "NEED_MORE_INFO",
+  "suggestedQuestions": ["请提供您的Python开发年限及主导或深度参与的后端项目详情", "请说明您在Django/FastAPI、微服务架构、Docker/Kubernetes及团队管理方面的具体实践和职责"]
 }
-2026-05-19 22:39:38.827 [http-nio-8080-exec-9] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [dfff71d0] - [e6498465] 材料 [resume1] 分析完成, 匹配度: 85, 动作: INTERVIEW
-2026-05-19 22:39:38.827 [http-nio-8080-exec-9] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [dfff71d0] - [e6498465] 开始分析材料 [project1], 文本长度: 155
-2026-05-19 22:39:38.827 [http-nio-8080-exec-9] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [dfff71d0] - [e6498465] 材料 [project1] 渲染后的 Prompt 长度: 639
-2026-05-19 22:39:42.665 [http-nio-8080-exec-9] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [dfff71d0] - [e6498465] 材料 [project1] 模型原始响应: {
-  "tags": ["Java/Go语言开发", "高并发系统设计", "微服务架构"],
-  "matchScore": 75,
-  "risks": ["未明确说明使用的编程语言（Java或Go）", "缺乏云平台（AWS/GCP/Azure）使用细节", "容器化与Kubernetes实践未体现"],
-  "nextAction": "PHONE_SCREEN",
-  "suggestedQuestions": ["项目中后端服务是采用单体架构还是微服务架构？各服务间如何通信和治理？", "在日处理10万+请求的场景下，您具体采取了哪些高并发优化措施（如缓存策略、数据库分库分表、限流降级等）？"]
+2026-05-20 08:48:24.633 [http-nio-8080-exec-2] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [8de5699b] - [f80bf3c5] 材料 [text-fec549] 分析完成, 匹配度: 0, 动作: NEED_MORE_INFO
+2026-05-20 08:48:24.633 [http-nio-8080-exec-2] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [8de5699b] - [f80bf3c5] 批量分析完成, 成功: 1, 失败: 0, 总计: 1
+2026-05-20 08:48:24.634 [http-nio-8080-exec-2] INFO  c.e.r.c.RecruitmentAgentController [8de5699b] - 纯文本分析请求处理完成，状态码: 200
+2026-05-20 08:48:28.709 [http-nio-8080-exec-5] INFO  c.e.r.c.RecruitmentAgentController [53b09dc9] - 收到纯文本分析请求，文本长度: 5
+2026-05-20 08:48:28.710 [http-nio-8080-exec-5] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [53b09dc9] - [a907ced1] 开始批量分析，共 1 份材料，模型: qwen-plus
+2026-05-20 08:48:28.710 [http-nio-8080-exec-5] DEBUG c.e.r.util.PromptLoader [53b09dc9] - 成功加载提示词模板: prompts/system-prompt.txt
+2026-05-20 08:48:28.711 [http-nio-8080-exec-5] DEBUG c.e.r.util.PromptLoader [53b09dc9] - 成功加载提示词模板: prompts/analyze-prompt.txt
+2026-05-20 08:48:28.711 [http-nio-8080-exec-5] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [53b09dc9] - [a907ced1] 开始分析材料 [text-a8413a], 文本长度: 5
+2026-05-20 08:48:28.711 [http-nio-8080-exec-5] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [53b09dc9] - [a907ced1] 材料 [text-a8413a] 渲染后的 Prompt 长度: 480
+2026-05-20 08:48:31.565 [http-nio-8080-exec-5] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [53b09dc9] - [a907ced1] 材料 [text-a8413a] 模型原始响应: {
+  "tags": ["未知", "未提供信息", "无有效数据"],
+  "matchScore": 0,
+  "risks": ["候选人/项目材料为空，无法评估技能、经验、项目背景或管理能力"],
+  "nextAction": "NEED_MORE_INFO",
+  "suggestedQuestions": ["请提供您的Python开发年限及主导或深度参与的后端项目详情", "请说明您在Django/FastAPI、微服务架构、Docker/Kubernetes以及团队管理方面的具体实践经验"]
 }
-2026-05-19 22:39:42.665 [http-nio-8080-exec-9] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [dfff71d0] - [e6498465] 材料 [project1] 提取的 JSON: {
-  "tags": ["Java/Go语言开发", "高并发系统设计", "微服务架构"],
-  "matchScore": 75,
-  "risks": ["未明确说明使用的编程语言（Java或Go）", "缺乏云平台（AWS/GCP/Azure）使用细节", "容器化与Kubernetes实践未体现"],
-  "nextAction": "PHONE_SCREEN",
-  "suggestedQuestions": ["项目中后端服务是采用单体架构还是微服务架构？各服务间如何通信和治理？", "在日处理10万+请求的场景下，您具体采取了哪些高并发优化措施（如缓存策略、数据库分库分表、限流降级等）？"]
+2026-05-20 08:48:31.565 [http-nio-8080-exec-5] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [53b09dc9] - [a907ced1] 材料 [text-a8413a] 提取的 JSON: {
+  "tags": ["未知", "未提供信息", "无有效数据"],
+  "matchScore": 0,
+  "risks": ["候选人/项目材料为空，无法评估技能、经验、项目背景或管理能力"],
+  "nextAction": "NEED_MORE_INFO",
+  "suggestedQuestions": ["请提供您的Python开发年限及主导或深度参与的后端项目详情", "请说明您在Django/FastAPI、微服务架构、Docker/Kubernetes以及团队管理方面的具体实践经验"]
 }
-2026-05-19 22:39:42.665 [http-nio-8080-exec-9] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [dfff71d0] - [e6498465] 材料 [project1] 分析完成, 匹配度: 75, 动作: PHONE_SCREEN
-2026-05-19 22:39:42.665 [http-nio-8080-exec-9] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [dfff71d0] - [e6498465] 批量分析完成, 成功: 2, 失败: 0, 总计: 2
-2026-05-19 22:39:42.665 [http-nio-8080-exec-9] INFO  c.e.r.c.RecruitmentAgentController [dfff71d0] - 分析请求处理完成，状态码: 200
-2026-05-19 22:42:20.879 [http-nio-8080-exec-1] ERROR c.e.r.c.RecruitmentAgentController [a6f547bc] - 处理请求时发生异常
-org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.example.recruitmentagent.dto.request.AnalyzeRequest` from Array value (token `JsonToken.START_ARRAY`)
-	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:406)
-	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:354)
-	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:184)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:159)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:134)
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:218)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:171)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at com.example.recruitmentagent.config.LoggingConfig.lambda$traceIdFilter$0(LoggingConfig.java:19)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `com.example.recruitmentagent.dto.request.AnalyzeRequest` from Array value (token `JsonToken.START_ARRAY`)
- at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 1]
-	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
-	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1752)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1526)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1473)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeFromArray(BeanDeserializer.java:656)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeOther(BeanDeserializer.java:211)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
-	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
-	at com.fasterxml.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:2105)
-	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1481)
-	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:395)
-	... 58 common frames omitted
-2026-05-19 22:43:03.809 [http-nio-8080-exec-3] INFO  c.e.r.c.RecruitmentAgentController [fd7cef15] - 收到分析请求，材料数量: 2
-2026-05-19 22:43:03.810 [http-nio-8080-exec-3] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [fd7cef15] - [eeb3a8ef] 开始批量分析，共 2 份材料，模型: qwen-plus
-2026-05-19 22:43:03.810 [http-nio-8080-exec-3] DEBUG c.e.r.util.PromptLoader [fd7cef15] - 成功加载提示词模板: prompts/system-prompt.txt
-2026-05-19 22:43:03.810 [http-nio-8080-exec-3] DEBUG c.e.r.util.PromptLoader [fd7cef15] - 成功加载提示词模板: prompts/analyze-prompt.txt
-2026-05-19 22:43:03.810 [http-nio-8080-exec-3] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [fd7cef15] - [eeb3a8ef] 开始分析材料 [resume1], 文本长度: 171
-2026-05-19 22:43:03.810 [http-nio-8080-exec-3] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [fd7cef15] - [eeb3a8ef] 材料 [resume1] 渲染后的 Prompt 长度: 574
-2026-05-19 22:43:06.425 [http-nio-8080-exec-3] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [fd7cef15] - [eeb3a8ef] 材料 [resume1] 模型原始响应: {
-  "tags": ["风控分析经验", "用户增长归因分析", "机器学习建模能力"],
-  "matchScore": 92,
+2026-05-20 08:48:31.565 [http-nio-8080-exec-5] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [53b09dc9] - [a907ced1] 材料 [text-a8413a] 分析完成, 匹配度: 0, 动作: NEED_MORE_INFO
+2026-05-20 08:48:31.565 [http-nio-8080-exec-5] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [53b09dc9] - [a907ced1] 批量分析完成, 成功: 1, 失败: 0, 总计: 1
+2026-05-20 08:48:31.565 [http-nio-8080-exec-5] INFO  c.e.r.c.RecruitmentAgentController [53b09dc9] - 纯文本分析请求处理完成，状态码: 200
+2026-05-20 08:48:55.512 [http-nio-8080-exec-6] INFO  c.e.r.c.RecruitmentAgentController [1e605802] - 收到文件上传分析请求，文件数量: 1
+2026-05-20 08:48:55.526 [http-nio-8080-exec-6] INFO  c.e.r.c.RecruitmentAgentController [1e605802] - 已加载文件 [Knife4j (2)], 原始文件名: Knife4j (2).txt, 文本长度: 1687
+2026-05-20 08:48:55.533 [http-nio-8080-exec-6] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [1e605802] - [99cb0ff3] 开始批量分析，共 1 份材料，模型: qwen-plus
+2026-05-20 08:48:55.533 [http-nio-8080-exec-6] DEBUG c.e.r.util.PromptLoader [1e605802] - 成功加载提示词模板: prompts/system-prompt.txt
+2026-05-20 08:48:55.533 [http-nio-8080-exec-6] DEBUG c.e.r.util.PromptLoader [1e605802] - 成功加载提示词模板: prompts/analyze-prompt.txt
+2026-05-20 08:48:55.533 [http-nio-8080-exec-6] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [1e605802] - [99cb0ff3] 开始分析材料 [Knife4j (2)], 文本长度: 1687
+2026-05-20 08:48:55.533 [http-nio-8080-exec-6] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [1e605802] - [99cb0ff3] 材料 [Knife4j (2)] 渲染后的 Prompt 长度: 2162
+2026-05-20 08:48:58.539 [http-nio-8080-exec-6] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [1e605802] - [99cb0ff3] 材料 [Knife4j (2)] 模型原始响应: {
+  "tags": ["恋爱咨询", "心理辅导", "关系建设"],
+  "matchScore": 0,
+  "risks": ["完全缺乏Python开发经验", "无后端工程背景", "未提及任何技术栈或相关项目经历"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["您是否有Python后端开发相关的工作经验或项目实践？", "您是否熟悉Django/FastAPI、Docker、Kubernetes等岗位要求的技术栈？"]
+}
+2026-05-20 08:48:58.545 [http-nio-8080-exec-6] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [1e605802] - [99cb0ff3] 材料 [Knife4j (2)] 提取的 JSON: {
+  "tags": ["恋爱咨询", "心理辅导", "关系建设"],
+  "matchScore": 0,
+  "risks": ["完全缺乏Python开发经验", "无后端工程背景", "未提及任何技术栈或相关项目经历"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["您是否有Python后端开发相关的工作经验或项目实践？", "您是否熟悉Django/FastAPI、Docker、Kubernetes等岗位要求的技术栈？"]
+}
+2026-05-20 08:48:58.545 [http-nio-8080-exec-6] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [1e605802] - [99cb0ff3] 材料 [Knife4j (2)] 分析完成, 匹配度: 0, 动作: REJECT
+2026-05-20 08:48:58.545 [http-nio-8080-exec-6] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [1e605802] - [99cb0ff3] 批量分析完成, 成功: 1, 失败: 0, 总计: 1
+2026-05-20 08:48:58.545 [http-nio-8080-exec-6] INFO  c.e.r.c.RecruitmentAgentController [1e605802] - 文件上传分析请求处理完成，分析 1 份材料
+2026-05-20 08:49:53.278 [http-nio-8080-exec-8] INFO  c.e.r.c.RecruitmentAgentController [836532d2] - 收到文件上传分析请求，文件数量: 1
+2026-05-20 08:49:53.287 [http-nio-8080-exec-8] INFO  c.e.r.c.RecruitmentAgentController [836532d2] - 已加载文件 [Knife4j (3)], 原始文件名: Knife4j (3).txt, 文本长度: 747
+2026-05-20 08:49:53.287 [http-nio-8080-exec-8] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [836532d2] - [7aa8357d] 开始批量分析，共 1 份材料，模型: qwen-plus
+2026-05-20 08:49:53.287 [http-nio-8080-exec-8] DEBUG c.e.r.util.PromptLoader [836532d2] - 成功加载提示词模板: prompts/system-prompt.txt
+2026-05-20 08:49:53.287 [http-nio-8080-exec-8] DEBUG c.e.r.util.PromptLoader [836532d2] - 成功加载提示词模板: prompts/analyze-prompt.txt
+2026-05-20 08:49:53.287 [http-nio-8080-exec-8] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [836532d2] - [7aa8357d] 开始分析材料 [Knife4j (3)], 文本长度: 747
+2026-05-20 08:49:53.287 [http-nio-8080-exec-8] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [836532d2] - [7aa8357d] 材料 [Knife4j (3)] 渲染后的 Prompt 长度: 1222
+2026-05-20 08:49:55.952 [http-nio-8080-exec-8] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [836532d2] - [7aa8357d] 材料 [Knife4j (3)] 模型原始响应: {
+  "tags": ["情感咨询", "心理辅导", "恋爱指导"],
+  "matchScore": 0,
+  "risks": ["完全缺乏Python开发经验", "无任何后端技术相关背景", "与招聘岗位技术要求零匹配"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["您是否具备Python或后端开发相关工作经验？", "您是否了解Django/FastAPI、Docker、Kubernetes等技术栈？"]
+}
+2026-05-20 08:49:55.952 [http-nio-8080-exec-8] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [836532d2] - [7aa8357d] 材料 [Knife4j (3)] 提取的 JSON: {
+  "tags": ["情感咨询", "心理辅导", "恋爱指导"],
+  "matchScore": 0,
+  "risks": ["完全缺乏Python开发经验", "无任何后端技术相关背景", "与招聘岗位技术要求零匹配"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["您是否具备Python或后端开发相关工作经验？", "您是否了解Django/FastAPI、Docker、Kubernetes等技术栈？"]
+}
+2026-05-20 08:49:55.952 [http-nio-8080-exec-8] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [836532d2] - [7aa8357d] 材料 [Knife4j (3)] 分析完成, 匹配度: 0, 动作: REJECT
+2026-05-20 08:49:55.952 [http-nio-8080-exec-8] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [836532d2] - [7aa8357d] 批量分析完成, 成功: 1, 失败: 0, 总计: 1
+2026-05-20 08:49:55.952 [http-nio-8080-exec-8] INFO  c.e.r.c.RecruitmentAgentController [836532d2] - 文件上传分析请求处理完成，分析 1 份材料
+2026-05-20 08:50:40.507 [http-nio-8080-exec-4] INFO  c.e.r.c.RecruitmentAgentController [dac5f2ac] - 收到文件上传分析请求，文件数量: 3
+2026-05-20 08:50:40.507 [http-nio-8080-exec-4] INFO  c.e.r.c.RecruitmentAgentController [dac5f2ac] - 已加载文件 [Knife4j (3)], 原始文件名: Knife4j (3).txt, 文本长度: 747
+2026-05-20 08:50:40.520 [http-nio-8080-exec-4] INFO  c.e.r.c.RecruitmentAgentController [dac5f2ac] - 已加载文件 [Knife4j], 原始文件名: Knife4j.txt, 文本长度: 1112
+2026-05-20 08:50:40.541 [http-nio-8080-exec-4] INFO  c.e.r.c.RecruitmentAgentController [dac5f2ac] - 已加载文件 [Knife4j (1)], 原始文件名: Knife4j (1).txt, 文本长度: 771
+2026-05-20 08:50:40.541 [http-nio-8080-exec-4] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [dac5f2ac] - [899356ce] 开始批量分析，共 3 份材料，模型: qwen-plus
+2026-05-20 08:50:40.541 [http-nio-8080-exec-4] DEBUG c.e.r.util.PromptLoader [dac5f2ac] - 成功加载提示词模板: prompts/system-prompt.txt
+2026-05-20 08:50:40.543 [http-nio-8080-exec-4] DEBUG c.e.r.util.PromptLoader [dac5f2ac] - 成功加载提示词模板: prompts/analyze-prompt.txt
+2026-05-20 08:50:40.543 [http-nio-8080-exec-4] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [dac5f2ac] - [899356ce] 开始分析材料 [Knife4j (3)], 文本长度: 747
+2026-05-20 08:50:40.543 [http-nio-8080-exec-4] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [dac5f2ac] - [899356ce] 材料 [Knife4j (3)] 渲染后的 Prompt 长度: 1222
+2026-05-20 08:50:43.164 [http-nio-8080-exec-4] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [dac5f2ac] - [899356ce] 材料 [Knife4j (3)] 模型原始响应: {
+  "tags": ["情感咨询", "心理辅导", "恋爱指导"],
+  "matchScore": 0,
+  "risks": ["完全缺乏Python开发经验", "无任何后端技术相关背景", "与招聘岗位技术要求零匹配"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["您是否了解该岗位为高级Python后端工程师职位？", "您是否有从事软件开发或相关技术工作的经历？"]
+}
+2026-05-20 08:50:43.164 [http-nio-8080-exec-4] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [dac5f2ac] - [899356ce] 材料 [Knife4j (3)] 提取的 JSON: {
+  "tags": ["情感咨询", "心理辅导", "恋爱指导"],
+  "matchScore": 0,
+  "risks": ["完全缺乏Python开发经验", "无任何后端技术相关背景", "与招聘岗位技术要求零匹配"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["您是否了解该岗位为高级Python后端工程师职位？", "您是否有从事软件开发或相关技术工作的经历？"]
+}
+2026-05-20 08:50:43.164 [http-nio-8080-exec-4] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [dac5f2ac] - [899356ce] 材料 [Knife4j (3)] 分析完成, 匹配度: 0, 动作: REJECT
+2026-05-20 08:50:43.164 [http-nio-8080-exec-4] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [dac5f2ac] - [899356ce] 开始分析材料 [Knife4j], 文本长度: 1112
+2026-05-20 08:50:43.164 [http-nio-8080-exec-4] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [dac5f2ac] - [899356ce] 材料 [Knife4j] 渲染后的 Prompt 长度: 1587
+2026-05-20 08:50:46.211 [http-nio-8080-exec-4] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [dac5f2ac] - [899356ce] 材料 [Knife4j] 模型原始响应: {
+  "tags": ["沟通表达", "情绪洞察", "关系咨询"],
+  "matchScore": 0,
+  "risks": ["无Python开发经验相关描述", "无Django/FastAPI等技术栈信息", "无微服务、Docker、Kubernetes或团队管理相关内容"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["您是否具备Python后端开发相关经验？能否提供具体项目和技术栈细节？", "您是否有Django/FastAPI、Docker/Kubernetes或微服务架构的实际落地经验？"]
+}
+2026-05-20 08:50:46.214 [http-nio-8080-exec-4] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [dac5f2ac] - [899356ce] 材料 [Knife4j] 提取的 JSON: {
+  "tags": ["沟通表达", "情绪洞察", "关系咨询"],
+  "matchScore": 0,
+  "risks": ["无Python开发经验相关描述", "无Django/FastAPI等技术栈信息", "无微服务、Docker、Kubernetes或团队管理相关内容"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["您是否具备Python后端开发相关经验？能否提供具体项目和技术栈细节？", "您是否有Django/FastAPI、Docker/Kubernetes或微服务架构的实际落地经验？"]
+}
+2026-05-20 08:50:46.214 [http-nio-8080-exec-4] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [dac5f2ac] - [899356ce] 材料 [Knife4j] 分析完成, 匹配度: 0, 动作: REJECT
+2026-05-20 08:50:46.214 [http-nio-8080-exec-4] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [dac5f2ac] - [899356ce] 开始分析材料 [Knife4j (1)], 文本长度: 771
+2026-05-20 08:50:46.214 [http-nio-8080-exec-4] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [dac5f2ac] - [899356ce] 材料 [Knife4j (1)] 渲染后的 Prompt 长度: 1246
+2026-05-20 08:50:49.911 [http-nio-8080-exec-4] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [dac5f2ac] - [899356ce] 材料 [Knife4j (1)] 模型原始响应: {
+  "tags": ["恋爱心理", "情感陪伴", "非评判式倾听"],
+  "matchScore": 0,
+  "risks": ["无Python开发经验", "无后端工程相关技能", "与招聘岗位技术方向完全不匹配"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["您是否具备Python或后端开发相关工作经验？", "您是否有意转行从事软件开发工作？如有，相关学习或项目经历是什么？"]
+}
+2026-05-20 08:50:49.911 [http-nio-8080-exec-4] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [dac5f2ac] - [899356ce] 材料 [Knife4j (1)] 提取的 JSON: {
+  "tags": ["恋爱心理", "情感陪伴", "非评判式倾听"],
+  "matchScore": 0,
+  "risks": ["无Python开发经验", "无后端工程相关技能", "与招聘岗位技术方向完全不匹配"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["您是否具备Python或后端开发相关工作经验？", "您是否有意转行从事软件开发工作？如有，相关学习或项目经历是什么？"]
+}
+2026-05-20 08:50:49.919 [http-nio-8080-exec-4] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [dac5f2ac] - [899356ce] 材料 [Knife4j (1)] 分析完成, 匹配度: 0, 动作: REJECT
+2026-05-20 08:50:49.919 [http-nio-8080-exec-4] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [dac5f2ac] - [899356ce] 批量分析完成, 成功: 3, 失败: 0, 总计: 3
+2026-05-20 08:50:49.919 [http-nio-8080-exec-4] INFO  c.e.r.c.RecruitmentAgentController [dac5f2ac] - 文件上传分析请求处理完成，分析 3 份材料
+2026-05-20 08:55:22.151 [main] INFO  c.e.r.RecruitmentAgentApplication [] - Starting RecruitmentAgentApplication using Java 17.0.16 with PID 20612 (D:\A_ideaProjects-Web-AI\RecruitMind\target\classes started by hjias in D:\A_ideaProjects-Web-AI\RecruitMind)
+2026-05-20 08:55:22.153 [main] DEBUG c.e.r.RecruitmentAgentApplication [] - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-05-20 08:55:22.154 [main] INFO  c.e.r.RecruitmentAgentApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-05-20 08:55:23.115 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat initialized with port 8080 (http)
+2026-05-20 08:55:23.120 [main] INFO  o.a.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-05-20 08:55:23.121 [main] INFO  o.a.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-05-20 08:55:23.162 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
+2026-05-20 08:55:23.162 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 979 ms
+2026-05-20 08:55:23.616 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping [] - Adding welcome page: class path resource [static/index.html]
+2026-05-20 08:55:23.903 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [] - Exposing 3 endpoint(s) beneath base path '/actuator'
+2026-05-20 08:55:23.940 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat started on port 8080 (http) with context path ''
+2026-05-20 08:55:23.951 [main] INFO  c.e.r.RecruitmentAgentApplication [] - Started RecruitmentAgentApplication in 2.155 seconds (process running for 2.539)
+2026-05-20 08:55:24.132 [RMI TCP Connection(1)-10.128.3.65] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-20 08:55:24.133 [RMI TCP Connection(1)-10.128.3.65] INFO  o.s.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
+2026-05-20 08:55:24.134 [RMI TCP Connection(1)-10.128.3.65] INFO  o.s.web.servlet.DispatcherServlet [] - Completed initialization in 1 ms
+2026-05-20 08:55:31.631 [http-nio-8080-exec-4] INFO  c.e.r.c.RecruitmentAgentController [544d90bb] - 收到 JSON 分析请求，材料数量: 2
+2026-05-20 08:55:31.633 [http-nio-8080-exec-4] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [544d90bb] - [6d8d4cab] 开始批量分析，共 2 份材料，模型: qwen-plus
+2026-05-20 08:55:31.633 [http-nio-8080-exec-4] DEBUG c.e.r.util.PromptLoader [544d90bb] - 成功加载提示词模板: prompts/system-prompt.txt
+2026-05-20 08:55:31.634 [http-nio-8080-exec-4] DEBUG c.e.r.util.PromptLoader [544d90bb] - 成功加载提示词模板: prompts/analyze-prompt.txt
+2026-05-20 08:55:31.634 [http-nio-8080-exec-4] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [544d90bb] - [6d8d4cab] 开始分析材料 [candidate_1], 文本长度: 80
+2026-05-20 08:55:31.634 [http-nio-8080-exec-4] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [544d90bb] - [6d8d4cab] 材料 [candidate_1] 渲染后的 Prompt 长度: 498
+2026-05-20 08:55:34.766 [http-nio-8080-exec-4] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [544d90bb] - [6d8d4cab] 材料 [candidate_1] 模型原始响应: {
+  "tags": ["Python", "微服务", "团队管理", "Django", "FastAPI"],
+  "matchScore": 95,
   "risks": [],
   "nextAction": "INTERVIEW",
-  "suggestedQuestions": ["请具体说明在DAU波动归因分析中使用的分析框架和关键驱动因子识别方法", "逾期预测模型上线后如何评估业务效果？是否参与过模型迭代与AB实验设计？"]
+  "suggestedQuestions": ["请详细说明您主导的千万级请求微服务重构项目中，如何划分服务边界、解决分布式事务及服务间通信问题？", "作为技术负责人，您在团队中如何推动Django与FastAPI技术选型并平衡迁移成本与长期可维护性？"]
 }
-2026-05-19 22:43:06.425 [http-nio-8080-exec-3] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [fd7cef15] - [eeb3a8ef] 材料 [resume1] 提取的 JSON: {
-  "tags": ["风控分析经验", "用户增长归因分析", "机器学习建模能力"],
-  "matchScore": 92,
+2026-05-20 08:55:34.766 [http-nio-8080-exec-4] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [544d90bb] - [6d8d4cab] 材料 [candidate_1] 提取的 JSON: {
+  "tags": ["Python", "微服务", "团队管理", "Django", "FastAPI"],
+  "matchScore": 95,
   "risks": [],
   "nextAction": "INTERVIEW",
-  "suggestedQuestions": ["请具体说明在DAU波动归因分析中使用的分析框架和关键驱动因子识别方法", "逾期预测模型上线后如何评估业务效果？是否参与过模型迭代与AB实验设计？"]
+  "suggestedQuestions": ["请详细说明您主导的千万级请求微服务重构项目中，如何划分服务边界、解决分布式事务及服务间通信问题？", "作为技术负责人，您在团队中如何推动Django与FastAPI技术选型并平衡迁移成本与长期可维护性？"]
 }
-2026-05-19 22:43:06.425 [http-nio-8080-exec-3] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [fd7cef15] - [eeb3a8ef] 材料 [resume1] 分析完成, 匹配度: 92, 动作: INTERVIEW
-2026-05-19 22:43:06.425 [http-nio-8080-exec-3] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [fd7cef15] - [eeb3a8ef] 开始分析材料 [project1], 文本长度: 109
-2026-05-19 22:43:06.425 [http-nio-8080-exec-3] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [fd7cef15] - [eeb3a8ef] 材料 [project1] 渲染后的 Prompt 长度: 512
-2026-05-19 22:43:09.264 [http-nio-8080-exec-3] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [fd7cef15] - [eeb3a8ef] 材料 [project1] 模型原始响应: {
-  "tags": ["SQL", "Python", "LightGBM", "用户增长", "特征工程", "AB实验"],
-  "matchScore": 92,
-  "risks": [],
-  "nextAction": "INTERVIEW",
-  "suggestedQuestions": ["请详细说明特征工程中如何处理用户行为时序数据及缺失值？", "AB实验的设计逻辑、样本量估算方法以及如何排除混杂变量影响？"]
+2026-05-20 08:55:34.766 [http-nio-8080-exec-4] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [544d90bb] - [6d8d4cab] 材料 [candidate_1] 分析完成, 匹配度: 95, 动作: INTERVIEW
+2026-05-20 08:55:34.774 [http-nio-8080-exec-4] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [544d90bb] - [6d8d4cab] 开始分析材料 [candidate_2], 文本长度: 68
+2026-05-20 08:55:34.774 [http-nio-8080-exec-4] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [544d90bb] - [6d8d4cab] 材料 [candidate_2] 渲染后的 Prompt 长度: 486
+2026-05-20 08:55:37.820 [http-nio-8080-exec-4] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [544d90bb] - [6d8d4cab] 材料 [candidate_2] 模型原始响应: {
+  "tags": ["Java", "Spring Boot", "Python初学者"],
+  "matchScore": 25,
+  "risks": ["经验年限不足（仅2年且非Python方向）", "缺乏Django/FastAPI实战经验", "无微服务架构相关实践"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["请说明近3个月Python自学的具体内容、练习项目及掌握程度", "是否有计划或已开始将现有Java微服务经验迁移到Python技术栈？如何实现？"]
 }
-2026-05-19 22:43:09.264 [http-nio-8080-exec-3] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [fd7cef15] - [eeb3a8ef] 材料 [project1] 提取的 JSON: {
-  "tags": ["SQL", "Python", "LightGBM", "用户增长", "特征工程", "AB实验"],
-  "matchScore": 92,
-  "risks": [],
-  "nextAction": "INTERVIEW",
-  "suggestedQuestions": ["请详细说明特征工程中如何处理用户行为时序数据及缺失值？", "AB实验的设计逻辑、样本量估算方法以及如何排除混杂变量影响？"]
+2026-05-20 08:55:37.820 [http-nio-8080-exec-4] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [544d90bb] - [6d8d4cab] 材料 [candidate_2] 提取的 JSON: {
+  "tags": ["Java", "Spring Boot", "Python初学者"],
+  "matchScore": 25,
+  "risks": ["经验年限不足（仅2年且非Python方向）", "缺乏Django/FastAPI实战经验", "无微服务架构相关实践"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["请说明近3个月Python自学的具体内容、练习项目及掌握程度", "是否有计划或已开始将现有Java微服务经验迁移到Python技术栈？如何实现？"]
 }
-2026-05-19 22:43:09.264 [http-nio-8080-exec-3] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [fd7cef15] - [eeb3a8ef] 材料 [project1] 分析完成, 匹配度: 92, 动作: INTERVIEW
-2026-05-19 22:43:09.264 [http-nio-8080-exec-3] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [fd7cef15] - [eeb3a8ef] 批量分析完成, 成功: 2, 失败: 0, 总计: 2
-2026-05-19 22:43:09.264 [http-nio-8080-exec-3] INFO  c.e.r.c.RecruitmentAgentController [fd7cef15] - 分析请求处理完成，状态码: 200
+2026-05-20 08:55:37.820 [http-nio-8080-exec-4] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [544d90bb] - [6d8d4cab] 材料 [candidate_2] 分析完成, 匹配度: 25, 动作: REJECT
+2026-05-20 08:55:37.820 [http-nio-8080-exec-4] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [544d90bb] - [6d8d4cab] 批量分析完成, 成功: 2, 失败: 0, 总计: 2
+2026-05-20 08:55:37.820 [http-nio-8080-exec-4] INFO  c.e.r.c.RecruitmentAgentController [544d90bb] - 分析请求处理完成，状态码: 200
+2026-05-20 08:56:00.332 [http-nio-8080-exec-5] INFO  c.e.r.c.RecruitmentAgentController [e737a188] - 收到纯文本分析请求，文本长度: 493
+2026-05-20 08:56:00.333 [http-nio-8080-exec-5] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [e737a188] - [56b7cbbb] 开始批量分析，共 1 份材料，模型: qwen-plus
+2026-05-20 08:56:00.334 [http-nio-8080-exec-5] DEBUG c.e.r.util.PromptLoader [e737a188] - 成功加载提示词模板: prompts/system-prompt.txt
+2026-05-20 08:56:00.334 [http-nio-8080-exec-5] DEBUG c.e.r.util.PromptLoader [e737a188] - 成功加载提示词模板: prompts/analyze-prompt.txt
+2026-05-20 08:56:00.334 [http-nio-8080-exec-5] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [e737a188] - [56b7cbbb] 开始分析材料 [text-0f2fe5], 文本长度: 493
+2026-05-20 08:56:00.334 [http-nio-8080-exec-5] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [e737a188] - [56b7cbbb] 材料 [text-0f2fe5] 渲染后的 Prompt 长度: 968
+2026-05-20 08:56:05.303 [http-nio-8080-exec-5] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [e737a188] - [56b7cbbb] 材料 [text-0f2fe5] 模型原始响应: {
+  "tags": ["Java", "Spring Boot", "AI工程", "RAG", "Docker"],
+  "matchScore": 45,
+  "risks": ["主技术栈为Java而非Python，缺乏Python后端框架（Django/FastAPI）实际使用经验", "无微服务架构设计相关描述，未体现服务拆分、通信、治理等能力", "无团队管理经验佐证", "AI工程经验偏重Spring生态，与Python后端岗位核心要求偏离"],
+  "nextAction": "PHONE_SCREEN",
+  "suggestedQuestions": ["您是否有Python后端开发经验？请具体说明使用Django或FastAPI完成的项目规模、职责及技术难点", "在过往工作中是否参与过微服务架构的设计或落地？能否介绍服务划分原则、跨服务通信方式及Kubernetes部署实践？"]
+}
+2026-05-20 08:56:05.303 [http-nio-8080-exec-5] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [e737a188] - [56b7cbbb] 材料 [text-0f2fe5] 提取的 JSON: {
+  "tags": ["Java", "Spring Boot", "AI工程", "RAG", "Docker"],
+  "matchScore": 45,
+  "risks": ["主技术栈为Java而非Python，缺乏Python后端框架（Django/FastAPI）实际使用经验", "无微服务架构设计相关描述，未体现服务拆分、通信、治理等能力", "无团队管理经验佐证", "AI工程经验偏重Spring生态，与Python后端岗位核心要求偏离"],
+  "nextAction": "PHONE_SCREEN",
+  "suggestedQuestions": ["您是否有Python后端开发经验？请具体说明使用Django或FastAPI完成的项目规模、职责及技术难点", "在过往工作中是否参与过微服务架构的设计或落地？能否介绍服务划分原则、跨服务通信方式及Kubernetes部署实践？"]
+}
+2026-05-20 08:56:05.303 [http-nio-8080-exec-5] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [e737a188] - [56b7cbbb] 材料 [text-0f2fe5] 分析完成, 匹配度: 45, 动作: PHONE_SCREEN
+2026-05-20 08:56:05.303 [http-nio-8080-exec-5] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [e737a188] - [56b7cbbb] 批量分析完成, 成功: 1, 失败: 0, 总计: 1
+2026-05-20 08:56:05.303 [http-nio-8080-exec-5] INFO  c.e.r.c.RecruitmentAgentController [e737a188] - 纯文本分析请求处理完成，状态码: 200
+2026-05-20 08:56:28.850 [http-nio-8080-exec-2] INFO  c.e.r.c.RecruitmentAgentController [a8fae160] - 收到文件上传分析请求，文件数量: 1
+2026-05-20 08:56:28.852 [http-nio-8080-exec-2] INFO  c.e.r.c.RecruitmentAgentController [a8fae160] - 已加载文件 [Knife4j], 原始文件名: Knife4j.txt, 文本长度: 1112
+2026-05-20 08:56:28.853 [http-nio-8080-exec-2] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [a8fae160] - [d09de9c9] 开始批量分析，共 1 份材料，模型: qwen-plus
+2026-05-20 08:56:28.853 [http-nio-8080-exec-2] DEBUG c.e.r.util.PromptLoader [a8fae160] - 成功加载提示词模板: prompts/system-prompt.txt
+2026-05-20 08:56:28.853 [http-nio-8080-exec-2] DEBUG c.e.r.util.PromptLoader [a8fae160] - 成功加载提示词模板: prompts/analyze-prompt.txt
+2026-05-20 08:56:28.853 [http-nio-8080-exec-2] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [a8fae160] - [d09de9c9] 开始分析材料 [Knife4j], 文本长度: 1112
+2026-05-20 08:56:28.853 [http-nio-8080-exec-2] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [a8fae160] - [d09de9c9] 材料 [Knife4j] 渲染后的 Prompt 长度: 1587
+2026-05-20 08:56:32.136 [http-nio-8080-exec-2] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [a8fae160] - [d09de9c9] 材料 [Knife4j] 模型原始响应: {
+  "tags": ["沟通表达", "情绪洞察", "关系咨询"],
+  "matchScore": 5,
+  "risks": ["无Python开发经验相关描述", "无Django/FastAPI等技术栈信息", "无微服务、Docker、Kubernetes或团队管理相关内容"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["您是否具备Python后端开发相关工作经验？能否提供具体项目和技术栈细节？", "您是否有Django/FastAPI、Docker/Kubernetes或微服务架构的实践经历？"]
+}
+2026-05-20 08:56:32.136 [http-nio-8080-exec-2] DEBUG c.e.r.s.i.RecruitmentAgentServiceImpl [a8fae160] - [d09de9c9] 材料 [Knife4j] 提取的 JSON: {
+  "tags": ["沟通表达", "情绪洞察", "关系咨询"],
+  "matchScore": 5,
+  "risks": ["无Python开发经验相关描述", "无Django/FastAPI等技术栈信息", "无微服务、Docker、Kubernetes或团队管理相关内容"],
+  "nextAction": "REJECT",
+  "suggestedQuestions": ["您是否具备Python后端开发相关工作经验？能否提供具体项目和技术栈细节？", "您是否有Django/FastAPI、Docker/Kubernetes或微服务架构的实践经历？"]
+}
+2026-05-20 08:56:32.136 [http-nio-8080-exec-2] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [a8fae160] - [d09de9c9] 材料 [Knife4j] 分析完成, 匹配度: 5, 动作: REJECT
+2026-05-20 08:56:32.138 [http-nio-8080-exec-2] INFO  c.e.r.s.i.RecruitmentAgentServiceImpl [a8fae160] - [d09de9c9] 批量分析完成, 成功: 1, 失败: 0, 总计: 1
+2026-05-20 08:56:32.138 [http-nio-8080-exec-2] INFO  c.e.r.c.RecruitmentAgentController [a8fae160] - 文件上传分析请求处理完成，分析 1 份材料
