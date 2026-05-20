@@ -6,6 +6,8 @@ import com.example.recruitmentagent.dto.request.AnalyzeRequest.Material;
 import com.example.recruitmentagent.dto.response.AnalysisResult;
 import com.example.recruitmentagent.dto.response.AnalyzeResponse;
 import com.example.recruitmentagent.dto.response.AnalyzeResponse.ResultItem;
+import com.example.recruitmentagent.entity.AnalysisSession;
+import com.example.recruitmentagent.service.AnalysisHistoryService;
 import com.example.recruitmentagent.service.RecruitmentAgentService;
 import com.example.recruitmentagent.util.PromptLoader;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -38,13 +40,16 @@ public class RecruitmentAgentServiceImpl implements RecruitmentAgentService {
     private final ChatModel chatModel;
     private final PromptLoader promptLoader;
     private final ObjectMapper objectMapper;
+    private final AnalysisHistoryService historyService;
 
     public RecruitmentAgentServiceImpl(ChatModel chatModel,
                                        PromptLoader promptLoader,
-                                       ObjectMapper objectMapper) {
+                                       ObjectMapper objectMapper,
+                                       AnalysisHistoryService historyService) {
         this.chatModel = chatModel;
         this.promptLoader = promptLoader;
         this.objectMapper = objectMapper;
+        this.historyService = historyService;
     }
 
     @Override
@@ -86,6 +91,34 @@ public class RecruitmentAgentServiceImpl implements RecruitmentAgentService {
 
         log.info("[{}] 批量分析完成, 成功: {}, 失败: {}, 总计: {}",
             traceId, successCount, failCount, materials.size());
+
+        // Persist to database
+        try {
+            AnalysisSession session = new AnalysisSession(traceId, jobDesc, materials.size());
+            session.setSuccessCount(successCount);
+            session.setFailCount(failCount);
+            for (int i = 0; i < results.size(); i++) {
+                ResultItem item = results.get(i);
+                Material material = materials.get(i);
+                com.example.recruitmentagent.entity.AnalysisResult entity =
+                    new com.example.recruitmentagent.entity.AnalysisResult(
+                        item.inputId(),
+                        truncate(material.text(), 5000),
+                        item.analysis().matchScore(),
+                        item.analysis().nextAction(),
+                        toJson(item.analysis().tags()),
+                        toJson(item.analysis().risks()),
+                        toJson(item.analysis().suggestedQuestions()),
+                        item.analysis().risks() != null && !item.analysis().risks().isEmpty()
+                            && item.analysis().risks().get(0).startsWith("分析失败")
+                            ? item.analysis().risks().get(0) : null
+                    );
+                session.addResult(entity);
+            }
+            historyService.saveSession(session);
+        } catch (Exception e) {
+            log.error("[{}] 持久化分析结果失败: {}", traceId, e.getMessage(), e);
+        }
 
         return AnalyzeResponse.success(jobDesc, results);
     }
@@ -183,6 +216,20 @@ public class RecruitmentAgentServiceImpl implements RecruitmentAgentService {
             List.of("分析失败: " + errorMsg),
             "NEED_MORE_INFO", Collections.emptyList()
         );
+    }
+
+    private String toJson(List<String> list) {
+        if (list == null) return "[]";
+        try {
+            return objectMapper.writeValueAsString(list);
+        } catch (JsonProcessingException e) {
+            return "[]";
+        }
+    }
+
+    private String truncate(String text, int maxLen) {
+        if (text == null) return null;
+        return text.length() <= maxLen ? text : text.substring(0, maxLen);
     }
 
     private String renderTemplate(String template, Map<String, String> variables) {
